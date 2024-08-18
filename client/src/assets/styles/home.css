@@ -1,0 +1,182 @@
+.layout__Main {
+  margin: 30px auto;
+  max-width: 1392px;
+}
+.eVwvzo {
+  height: auto;
+  text-align: center;
+  color: rgb(34, 35, 34);
+  width: 320px;
+}
+.eVwvzo h1,
+.eVwvzo h2,
+.eVwvzo h3,
+.eVwvzo h4,
+.eVwvzo h5,
+.eVwvzo h6 {
+  font-size: 25px;
+  line-height: 27.5px;
+  color: rgb(109, 31, 55);
+  font-weight: normal !important;
+}
+.eVwvzo p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px 34px 36px;
+  font-weight: normal !important;
+}
+.promo__container {
+  display: grid;
+  overflow: hidden;
+  justify-items: center;
+  padding: 0px 16px 60px;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.promo__card_first {
+  background-color: #f5e8b0;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+.promo__card_second {
+  background-color: #f0f5b0;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+.promo__card_third {
+  background-color: #f5e8b0;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+.ffKpmw {
+  background-image: url(../promo_breakfast__1920_2880.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 320px;
+  height: 242px;
+}
+.lhjGVk {
+  background-image: url(../promo_drink__1024_678.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 320px;
+  height: 242px;
+}
+.dniyWw {
+  background-image: url(../promo_dessert__640_640.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 320px;
+  height: 242px;
+}
+.jIQMGF {
+  text-align: center;
+}
+.jIQMGF a {
+  border-radius: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.jIQMGF a::after {
+  border-left: 6px solid rgb(255, 255, 255);
+  content: "";
+  display: inline-block;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  margin-left: 16px;
+}
+
+/*
+
+@media (min-width: 1280px) {
+  .kbNriO {
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    gap: 32px;
+  }
+  .eVwvzo {
+    width: 330px;
+  }
+  .ffKpmw {
+    height: 248px;
+    width: 330px;
+  }
+  .lhjGVk {
+    height: 248px;
+    width: 330px;
+  }
+  .dniyWw {
+    height: 248px;
+    width: 330px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .eVwvzo {
+    width: 320px;
+  }
+  .ffKpmw {
+    width: 320px;
+    height: 241px;
+  }
+  .lhjGVk {
+    width: 320px;
+    height: 241px;
+  }
+  .dniyWw {
+    width: 320px;
+    height: 241px;
+  }
+}
+
+@media (min-width: 768px) {
+ 
+  .kbNriO {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px 16px 80px;
+    gap: 24px;
+  }
+  .eVwvzo {
+    width: 240px;
+  }
+  .eVwvzo p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0px 20px 35px;
+    font-weight: normal !important;
+  }
+  .jIQMGF a {
+    padding: 18px 27px;
+    margin-bottom: 18px;
+  }
+  .jIQMGF a::after {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+  .ffKpmw {
+    background-image: url(//images.ctfassets.net/royi30b2qd26/AK8ULpyEtjPUrciI19z3T/7837507…/may24-breakfastdealinnocent-gridpromo-640x484.jpg);
+    height: 180px;
+    width: 240px;
+  }
+  .lhjGVk {
+    background-image: url(//images.ctfassets.net/royi30b2qd26/2kkOU2YohTcHxbWhz2z9q6/4e4f8c9…/summer24-lunch-GRID-PROMO-640x484.jpg);
+    height: 180px;
+    width: 240px;
+  }
+  .dniyWw {
+    background-image: url(//images.ctfassets.net/royi30b2qd26/54HmKVTEqbDSkZ6V22fJ2R/1ef8e86…/summer24-sweet-GRID-PROMO-640x484.jpg);
+    height: 180px;
+    width: 240px;
+  }
+ 
+}
+*/

@@ -1,0 +1,160 @@
+.lkzBev {
+  background: #b55928;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  font-weight: normal !important;
+}
+.DWIuU {
+  position: relative;
+}
+.bPiWai {
+  max-width: 1600px;
+  margin: auto;
+  padding: 40px 10.5%;
+  display: flex;
+  gap: 10px;
+  flex-flow: wrap;
+  justify-content: left;
+  position: relative;
+  z-index: 1;
+}
+.hZZvVz {
+  margin: 10px 10px 44px;
+}
+.cJMtyj {
+  font-family: "Ruthie", cursive;
+  margin: 0px 0px 20px;
+  padding: 20px 5px;
+  font-size: 60px;
+  line-height: 24px;
+  font-weight: normal !important;
+}
+.lfPKDg {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+.lfPKDg li {
+  margin-bottom: 12px;
+}
+.lfPKDg li a {
+  padding: 0px;
+
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: normal !important;
+}
+.douKRr {
+  background: #2c231d;
+  padding: 32px 10.5% 72px;
+}
+.gdDGuL {
+  max-width: 1600px;
+  margin: 0px auto;
+  display: flex;
+  gap: 10px;
+  flex-flow: wrap;
+}
+.kZXzbY {
+  width: 100%;
+  display: flex;
+  row-gap: 8px;
+}
+.kZXzbY a {
+  font-weight: normal !important;
+}
+.kZXzbY li {
+  padding-right: 20px;
+}
+.gSivZX {
+  width: 100%;
+  margin: 40px 0px 0px;
+}
+.kUbxns {
+  width: 100%;
+  margin-top: 40px;
+}
+.QhwVB {
+  display: flex;
+  gap: 25px;
+}
+.bpcqgY {
+  height: 26px;
+}
+/* 
+@media (min-width: 1440px) {
+  .bPiWai {
+    max-width: 1558px;
+  }
+  .douKRr {
+    padding: 32px 80px 72px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bPiWai {
+    padding: 64px 83px 0px;
+  }
+  .douKRr {
+    padding: 32px 10% 72px;
+  }
+  .kZXzbY {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bPiWai {
+    padding: 64px 4% 0px;
+  }
+  .hZZvVz.fiveCol {
+    flex: 0 0 16.5%;
+    margin-right: 2%;
+  }
+  .hZZvVz.fiveCol {
+    flex: 0 0 16.5%;
+    margin-right: 2%;
+  }
+  .douKRr {
+    padding: 32px 4% 72px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bPiWai {
+    padding: 64px 5% 0px;
+    flex-flow: wrap;
+  }
+  .hZZvVz {
+    flex: 0 0 20%;
+    margin: 0px 3% 56px 0px;
+  }
+  .cJMtyj {
+    margin: 0px 0px 40px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .lfPKDg li a {
+    font-size: 18px;
+  }
+  .hZZvVz {
+    flex: 0 0 20%;
+    margin: 0px 3% 56px 0px;
+  }
+  .douKRr {
+    padding: 32px 5% 72px;
+  }
+  .kZXzbY {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 48px;
+  }
+  .gSivZX {
+    width: 50%;
+  }
+}
+
+@media (min-width: 640px) {
+  .douKRr {
+    padding: 64px 10.5% 104px;
+  }
+} */

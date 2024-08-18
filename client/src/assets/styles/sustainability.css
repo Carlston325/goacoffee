@@ -1,0 +1,469 @@
+.cJmbBC {
+  margin: 0px 2.5%;
+  padding: 0px;
+}
+.eClrHm {
+  background-color: white;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 20px 3%;
+  max-width: 608px;
+  margin: 0px auto;
+}
+.eClrHm h1,
+.eClrHm h2,
+.eClrHm h3,
+.eClrHm h4,
+.eClrHm h5,
+.eClrHm h6 {
+  margin: 0px 0px 40px;
+  color: #b55928;
+}
+.eClrHm p {
+  font-style: normal;
+  margin: 16px 0px 32px;
+  padding: 0px;
+  font-weight: normal !important;
+}
+.eClrHm .inline-right,
+.eClrHm .inline-left {
+  display: block;
+  width: 100%;
+  padding-bottom: 27px;
+}
+.bpTlAp {
+  display: grid;
+  overflow: hidden;
+  justify-items: center;
+  padding: 0px 16px 60px;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+.daOXCu {
+  background-color: rgb(255, 255, 255);
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+.gzMMzi {
+  background-image: url(//images.ctfassets.net/royi30b2qd26/1OBfwv6CMY9C84t2KyDPLg/77810be…/cwc-people-2-660x496.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: auto;
+  height: 190px;
+}
+.fDZsVW {
+  background-image: url(//images.ctfassets.net/royi30b2qd26/4PKMZGusplyhlzABoUtkZg/4a89c9d…/cwc-other-ingredients-3-660x496.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: auto;
+  height: 190px;
+}
+.cFBDcK {
+  background-image: url(//images.ctfassets.net/royi30b2qd26/1F9VYC2HLaXtVxLmD3DnFt/430d11c…/cwc-nutrition-2-660x496.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: auto;
+  height: 190px;
+}
+.jwfJeC {
+  background-image: url(//images.ctfassets.net/royi30b2qd26/7F8v8XffBGBYHtwqWSofNn/6401b7c…/cwc-resources-2-660x496.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: auto;
+  height: 190px;
+}
+.gXMkCN {
+  height: auto;
+  text-align: center;
+  color: rgb(34, 35, 34);
+  width: auto;
+}
+.gXMkCN h4 {
+  margin: 21px 0px 10px;
+}
+.gXMkCN h1,
+.gXMkCN h2,
+.gXMkCN h3,
+.gXMkCN h4,
+.gXMkCN h5,
+.gXMkCN h6 {
+  font-size: 20px;
+  line-height: 22px;
+  color: #b55928;
+  font-weight: normal !important;
+}
+.gXMkCN p {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0px 8px 16px;
+  font-weight: normal !important;
+}
+.dfNMmz {
+  text-align: center;
+}
+.dfNMmz a {
+  pointer-events: auto;
+  background: rgb(255, 255, 255);
+  color: rgb(109, 31, 55);
+  padding: 15px 20px;
+  border-radius: 32px;
+}
+.dfNMmz a::after {
+  content: "";
+  display: inline-block;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  margin-left: 16px;
+}
+.jwGbBy {
+  text-align: left;
+}
+.jwGbBy a {
+  color: rgb(109, 31, 55);
+  padding: 15px 0px;
+  text-decoration: underline 2px;
+  text-underline-offset: 4px;
+}
+.jwGbBy a::after {
+  content: "";
+  display: inline-block;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  margin-left: 16px;
+}
+.kalIUB {
+  display: grid;
+  overflow: hidden;
+  justify-items: center;
+  padding: 0px 16px 60px;
+  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+}
+.hasxHP {
+  background-color: rgb(231, 214, 229);
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+.eZJsWw {
+  background-image: url(//images.ctfassets.net/royi30b2qd26/1do3va3r0X27Rn7h9Mw6Y9/bacf124…/cwc-coffee-660x496.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 320px;
+  height: 242px;
+}
+.eTXfFA {
+  background-image: url(//images.ctfassets.net/royi30b2qd26/68n0Bwx9j7w40IWP99dFKJ/9cd2698…/cwc-cups-and-packaging-660x496.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 320px;
+  height: 242px;
+}
+.cZoesU {
+  background-image: url(//images.ctfassets.net/royi30b2qd26/2LbnJE5YNmfh6qpZJxlVDr/0c8f343…/cwc-climate-660x496.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 320px;
+  height: 242px;
+}
+.fWPuhk {
+  background-image: url(//images.ctfassets.net/royi30b2qd26/5Smx3bEV5q0KDRxY6atazs/6b91943…/cwc-communities-660x496.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 320px;
+  height: 242px;
+}
+.article_top {
+  padding: 0px;
+  margin: 0px 4%;
+  max-width: 1274px;
+}
+.article_top > div {
+  background-color: transparent;
+  max-width: 1392px;
+  margin: 0px auto;
+  padding: 40px 5%;
+  font-size: 18px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+.article_top h2 {
+  color: #b55928;
+  margin: 0px 0px 29px;
+  font-size: 35px;
+}
+.article_top p {
+  margin: 18px 0px 32px;
+  padding: 0px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal !important;
+}
+.article_top > div .inline-right {
+  width: 389px;
+  padding-bottom: 27px;
+  padding-right: 20px;
+  display: block;
+  box-sizing: content-box;
+  float: left;
+}
+.article_top_image--coffee-commitment {
+  background-image: url(../coffee_wth_commitment.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 360px;
+}
+.article_links {
+  display: flex;
+  flex-direction: column;
+}
+.article_links h3 {
+  color: #b55928;
+  width: 100%;
+  margin: 30px auto 56px auto;
+  font-size: 30px;
+  text-align: center;
+}
+.article_links--Links {
+  padding: 0px 16px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  gap: 32px;
+  overflow: hidden;
+}
+.article_links .iLfAmY .card {
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.article_bottom {
+  display: flex;
+}
+.article_bottom--upper_card {
+  width: 30%;
+  height: auto;
+  max-height: 220px;
+  margin: 0px 2rem 1rem 0;
+}
+.article_bottom_image--coffee_policies {
+  background-image: url(../coffee_policies.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 220px;
+}
+.article_bottom--lower_card {
+  color: rgb(34, 35, 34);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  list-style: none;
+}
+.article_bottom--lower_card > div {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0%;
+  text-align: left;
+}
+.article_bottom--lower_card > div h4 {
+  color: #b55928;
+  width: 100%;
+  margin: 0px 0px 10px;
+  text-align: left;
+}
+.article_bottom--lower_card > div p {
+  color: rgb(34, 35, 34);
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.article_bottom--lower_card .link {
+  margin: 18px 0px 0px;
+  padding: 0px;
+}
+.article_bottom--lower_card .link a {
+  color: #b55928;
+  margin-bottom: 18px;
+  padding: 18px 0px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline 2px;
+  text-underline-offset: 4px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: normal !important;
+}
+
+.bsVIun {
+  padding: 0px;
+  margin: 0px 4%;
+  max-width: 1274px;
+}
+.jEobIm {
+  background-color: transparent;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 40px 5%;
+  max-width: 1392px;
+  margin: 0px auto;
+}
+.jEobIm h1,
+.jEobIm h2,
+.jEobIm h3,
+.jEobIm h4,
+.jEobIm h5,
+.jEobIm h6 {
+  color: #b55928;
+  margin: 0px 0px 29px;
+  font-size: 40px;
+}
+.jEobIm p {
+  font-family: "Costa Text Regular", sans-serif;
+  font-style: normal;
+  margin: 18px 0px 32px;
+  padding: 0px;
+  font-weight: normal !important;
+}
+.egFTCM {
+  display: flex;
+  flex-direction: column;
+}
+.article_title {
+  width: 100%;
+  margin: 30px auto 56px auto;
+  color: #b55928;
+  text-align: center;
+  font-size: 30px;
+}
+.gpBKZs {
+  width: 90%;
+  margin: 0px auto;
+  padding: 10px;
+}
+.coffee_source_image {
+  background-image: url(../coffee_source.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 220px;
+}
+
+.dfSiCt {
+  max-width: 1392px;
+  margin: 80px auto;
+  padding: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: initial;
+}
+.dhXnTr {
+  background-color: rgb(207, 177, 168);
+  width: 50%;
+  min-height: 512px;
+  padding: 80px 6.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  list-style: none;
+}
+.dhXnTr h1,
+.dhXnTr h2,
+.dhXnTr h3,
+.dhXnTr h4,
+.dhXnTr h5,
+.dhXnTr h6 {
+  width: 100%;
+  margin-top: 0px;
+  margin: 0px 0px 20px;
+  font-size: 30px;
+}
+.dhXnTr p {
+  width: 100%;
+  margin-top: 0px;
+  padding: 0px 30px;
+}
+.eeECea {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px auto 16px;
+  text-align: center;
+}
+.dfSiCt ul {
+  margin: 0px;
+  padding: 0px;
+}
+.jkcThw {
+  display: block;
+  text-align: center;
+}
+.jkcThw .link {
+  pointer-events: auto;
+  padding: 18px 27px;
+  border-radius: 32px;
+  text-decoration: none;
+}
+.jkcThw .link::after {
+  margin-left: 16px;
+  border-left: 6px solid #b55928;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  display: inline-block;
+  content: "";
+}
+.gsgHhh li + li {
+  margin-top: 18px;
+}
+.kuucrm {
+  display: block;
+  text-align: center;
+}
+.kuucrm .link {
+  padding: 15px 0px;
+  text-decoration: underline 2px;
+  text-underline-offset: 4px;
+}
+.kuucrm .link::after {
+  margin-left: 16px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid #b55928;
+  display: inline-block;
+  content: "";
+}
+.kOtuDH {
+  width: 50%;
+  height: auto;
+  min-height: 512px;
+  margin: 0px;
+}
+.article_bottom_image--cups_n_packages {
+  background-image: url(../coffee_cups_n_packages.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 220px;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  max-width: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 0px;
+}
