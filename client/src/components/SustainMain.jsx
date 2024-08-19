@@ -46,7 +46,7 @@ function SustainMain() {
                       nature and farmers.
                     </p>
                   </div>
-                  <div className="">
+                  <div className="btnLight text-center">
                     <a href="/sustainability/coffee">Learn more</a>
                   </div>
                 </div>
@@ -61,11 +61,9 @@ function SustainMain() {
                     <p>
                       Championing circular <br />
                       cups and packaging solutions.
-                      <br />
-                      <br />
                     </p>
                   </div>
-                  <div className="">
+                  <div className="btnLight text-center">
                     <a href="/sustainability/cups-and-packaging">Learn more</a>
                   </div>
                 </div>
@@ -82,7 +80,7 @@ function SustainMain() {
                       Net Zero by 2040.
                     </p>
                   </div>
-                  <div className="">
+                  <div className="btnLight text-center">
                     <a href="/sustainability/climate">Learn more</a>
                   </div>
                 </div>
@@ -99,7 +97,7 @@ function SustainMain() {
                       to them.
                     </p>
                   </div>
-                  <div className="">
+                  <div className="btnLight text-center">
                     <a href="/sustainability/communities">Learn more</a>
                   </div>
                 </div>

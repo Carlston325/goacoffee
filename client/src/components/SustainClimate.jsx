@@ -37,7 +37,7 @@ function SustainClimate() {
             <div className="promoGridCollection__PromosWrapper-sc-huubw1-2 kbNriO">
               <div
                 data-cy="no-cta__grid-promo"
-                className="promoGridNoButton__Wrapper-sc-1vkdt96-0 gpBKZs"
+                className="promoGridNoButton__Wrapper-sc-1vkdt96-0 gpBKZs card"
               >
                 <div
                   data-cy="no-cta__image"
@@ -55,7 +55,7 @@ function SustainClimate() {
               </div>
               <div
                 data-cy="no-cta__grid-promo"
-                className="promoGridNoButton__Wrapper-sc-1vkdt96-0 gpBKZs"
+                className="promoGridNoButton__Wrapper-sc-1vkdt96-0 gpBKZs card"
               >
                 <div
                   data-cy="no-cta__image"
@@ -72,7 +72,7 @@ function SustainClimate() {
               </div>
               <div
                 data-cy="no-cta__grid-promo"
-                className="promoGridNoButton__Wrapper-sc-1vkdt96-0 gpBKZs"
+                className="promoGridNoButton__Wrapper-sc-1vkdt96-0 gpBKZs card"
               >
                 <div
                   data-cy="no-cta__image"
