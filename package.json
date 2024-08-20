@@ -1,11 +1,15 @@
 {
   "name": "carlstons_coffee",
   "version": "1.0.0",
+  "homepage": "https://Carlston325.github.io/carlstons-coffee",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "concurrently \"npm run server\" \"npm run giftcard\" \"npm run client\"",
+    "build": "react-scripts build",
     "server": "nodemon server.js",
     "giftcard": "cross-env PORT=3001 npm start --prefix giftcard",
     "client": "npm start --prefix client"
@@ -33,6 +37,7 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
+    "gh-pages": "^6.1.1",
     "nodemon": "^3.1.4"
   }
 }
