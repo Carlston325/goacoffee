@@ -6,16 +6,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build --prefix client",
+    "deploy": "gh-pages -d client/build",
     "start": "concurrently \"npm run server\" \"npm run giftcard\" \"npm run client\"",
-    "build": "react-scripts build",
+    "build": "npm run build --prefix client",
     "server": "nodemon server.js",
     "giftcard": "cross-env PORT=3001 npm start --prefix giftcard",
     "client": "npm start --prefix client"
   },
   "keywords": [],
-  "author": "",
+  "author": "Carlston Rebelo",
   "license": "ISC",
   "dependencies": {
     "@emotion/react": "^11.13.0",
@@ -29,9 +29,10 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "pg": "^8.12.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^6.24.1",
+    "react-scripts": "^5.0.1",
     "styled-components": "^6.1.12"
   },
   "devDependencies": {
