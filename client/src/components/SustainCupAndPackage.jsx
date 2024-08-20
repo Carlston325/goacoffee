@@ -3,10 +3,7 @@ import React from "react";
 function SustainCupAndPackage() {
   return (
     <>
-      <main
-        className="layout__Main-sc-78ulcb-0 epUgWD"
-        style={{ minHeight: "400px" }}
-      >
+      <main className="epUgWD" style={{ minHeight: "400px" }}>
         <article className="bsVIun">
           <div className="richText__Content-sc-g2bix5-1 jEobIm">
             <h2>Serving great tasting coffee and food, sustainably</h2>
@@ -18,6 +15,7 @@ function SustainCupAndPackage() {
             </p>
           </div>
         </article>
+
         <article id="reusables-loyalty" className="bsVIun">
           <div className="ldNozT">
             <h4>
@@ -41,27 +39,16 @@ function SustainCupAndPackage() {
             </li>
           </ul>
         </article>
+
         <article className="egFTCM">
           <div>
-            <h3 className="promoGridCollection__Heading-sc-huubw1-0 jYcxPR">
-              Our progress and promises
-            </h3>
+            <h3 className="jYcxPR">Our progress and promises</h3>
           </div>
-          <div
-            data-cy="grid-promo__wrapper"
-            className="promoGridCollection__GridWrapper-sc-huubw1-3 iLfAmY"
-          >
-            <div className="promoGridCollection__PromosWrapper-sc-huubw1-2 kbNriO">
-              <div
-                data-cy="no-cta__grid-promo"
-                className="promoGridNoButton__Wrapper-sc-1vkdt96-0 gpBKZs card"
-              >
-                <div
-                  data-cy="no-cta__image"
-                  alt=""
-                  className="promoGridNoButton__Image-sc-1vkdt96-1 erbpot"
-                ></div>
-                <div className="promoGridNoButton__Content-sc-1vkdt96-4 dOxNqn">
+          <div className="iLfAmY">
+            <div className="kbNriO">
+              <div className="gpBKZs card">
+                <div alt="" className="erbpot"></div>
+                <div className="dOxNqn">
                   <h4>Now</h4>
                   <p>
                     Our takeaway cup is made from 100% plant-based, renewable
@@ -69,32 +56,18 @@ function SustainCupAndPackage() {
                   </p>
                 </div>
               </div>
-              <div
-                data-cy="no-cta__grid-promo"
-                className="promoGridNoButton__Wrapper-sc-1vkdt96-0 gpBKZs card"
-              >
-                <div
-                  data-cy="no-cta__image"
-                  alt=""
-                  className="promoGridNoButton__Image-sc-1vkdt96-1 dDVzMZ"
-                ></div>
-                <div className="promoGridNoButton__Content-sc-1vkdt96-4 dOxNqn">
+              <div className="gpBKZs card">
+                <div alt="" className="dDVzMZ"></div>
+                <div className="dOxNqn">
                   <h4>Near</h4>
                   <p>
                     We’ll make all our primary packaging reusable or recyclable.
                   </p>
                 </div>
               </div>
-              <div
-                data-cy="no-cta__grid-promo"
-                className="promoGridNoButton__Wrapper-sc-1vkdt96-0 gpBKZs card"
-              >
-                <div
-                  data-cy="no-cta__image"
-                  alt=""
-                  className="promoGridNoButton__Image-sc-1vkdt96-1 fxaCVp"
-                ></div>
-                <div className="promoGridNoButton__Content-sc-1vkdt96-4 dOxNqn">
+              <div className="gpBKZs card">
+                <div alt="" className="fxaCVp"></div>
+                <div className="dOxNqn">
                   <h4>Next</h4>
                   <p>
                     Our single-use product packaging for Costa items will
@@ -107,6 +80,7 @@ function SustainCupAndPackage() {
             </div>
           </div>
         </article>
+
         <article className="bsVIun">
           <div className="ldNozT">
             <h2>Cup recycling</h2>
@@ -151,6 +125,7 @@ function SustainCupAndPackage() {
             </p>
           </div>
         </article>
+
         <article className="bsVIun">
           <div className="ldNozT">
             <h2>Innovative cup design</h2>
@@ -160,7 +135,6 @@ function SustainCupAndPackage() {
               lining to plant-based plastic.
             </p>
             <p>
-              <span className="clear"></span>
               We also replaced our plastic straws with a paper-based alternative
               and in Autumn 2023 launched our new recyclable fibre lid for our
               hot takeaway drinks in stores in Wales and Belgium. Available
@@ -170,6 +144,7 @@ function SustainCupAndPackage() {
             </p>
           </div>
         </article>
+
         <article className="bsVIun">
           <div className="ldNozT">
             <h2>Reusable cup schemes</h2>
@@ -190,6 +165,7 @@ function SustainCupAndPackage() {
             </p>
           </div>
         </article>
+
         <article className="bsVIun">
           <div className="ldNozT">
             <h2>Refill</h2>
@@ -203,15 +179,10 @@ function SustainCupAndPackage() {
               out for the Refill logo in our store windows.&nbsp;
             </p>
 
-            <ul className="teaser__LinkCtaList-sc-14eesrb-3 kenXRy">
+            <ul className="kenXRy">
               <li>
-                <span className="linkCta__StyledLinkCta-sc-1bq328k-0 ipdQWq linkCta">
-                  <a
-                    href="https://www.refill.org.uk/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
+                <span className="ipdQWq linkCta">
+                  <a href="https://www.refill.org.uk/" className="link">
                     Learn more about Refill
                   </a>
                 </span>
@@ -219,6 +190,7 @@ function SustainCupAndPackage() {
             </ul>
           </div>
         </article>
+
         <article id="pods" className="bsVIun">
           <div className="ldNozT">
             <div className="eCnChY">
@@ -246,6 +218,7 @@ function SustainCupAndPackage() {
             </ul>
           </div>
         </article>
+
         <article id="whats-next" className="dfSiCt">
           <div className="dhXnTr">
             <div className="eeECea">
@@ -274,15 +247,13 @@ function SustainCupAndPackage() {
           </div>
           <div className="kOtuDH">
             <div
-              className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+              className="image_container image_container-constrained"
               style={{ height: "100%", minHeight: "300px", width: "100%" }}
             >
-              <div style={{ maxWidth: "700px", display: "block" }}>
-                <div className="climate_image"></div>
-              </div>
+              <div className="climate_image"></div>
             </div>
           </div>
-        </article>{" "}
+        </article>
       </main>
     </>
   );

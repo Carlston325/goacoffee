@@ -201,7 +201,7 @@ option {
 .iIYSRA {
   padding: 0px 32px;
 }
-.gatsby-image-wrapper img {
+.image_container img {
   bottom: 0;
   height: 100%;
   left: 0;
@@ -511,15 +511,15 @@ option {
 }
 
 /* gatsby */
-.gatsby-image-wrapper-constrained {
+.image_container-constrained {
   display: inline-block;
   vertical-align: top;
 }
-.gatsby-image-wrapper {
+.image_container {
   position: relative;
   overflow: hidden;
 }
-.gatsby-image-wrapper img {
+.image_container img {
   bottom: 0;
   height: 100%;
   left: 0;

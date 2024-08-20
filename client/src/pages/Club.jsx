@@ -70,8 +70,8 @@ function Club(props) {
                 </div>
                 <div className="campaign__ImageWrapper-sc-16ld8np-8 jGsTUj">
                   <div
-                    data-gatsby-image-wrapper=""
-                    className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                    data-image_container=""
+                    className="image_container image_container-constrained"
                     style={{
                       height: "100%",
                       minHeight: "300px",
@@ -175,8 +175,8 @@ function Club(props) {
                 </div>
                 <div className="campaign__ImageWrapper-sc-16ld8np-8 jGsTUj">
                   <div
-                    data-gatsby-image-wrapper=""
-                    className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                    data-image_container=""
+                    className="image_container image_container-constrained"
                     style={{
                       height: "100%",
                       minHeight: "300px",
@@ -279,8 +279,8 @@ function Club(props) {
                 </div>
                 <div className="campaign__ImageWrapper-sc-16ld8np-8 jGsTUj">
                   <div
-                    data-gatsby-image-wrapper=""
-                    className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                    data-image_container=""
+                    className="image_container image_container-constrained"
                     style={{
                       height: "100%",
                       minHeight: "300px",
@@ -381,8 +381,8 @@ function Club(props) {
                 </div>
                 <div className="campaign__ImageWrapper-sc-16ld8np-8 jGsTUj">
                   <div
-                    data-gatsby-image-wrapper=""
-                    className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                    data-image_container=""
+                    className="image_container image_container-constrained"
                     style={{
                       height: "100%",
                       minHeight: "300px",
@@ -451,8 +451,8 @@ function Club(props) {
             >
               <div className="teaser__ImageWrapper-sc-18o2m9g-1 dHmxpK">
                 <div
-                  data-gatsby-image-wrapper=""
-                  className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                  data-image_container=""
+                  className="image_container image_container-constrained"
                   style={{ height: "100%" }}
                 >
                   <div style={{ maxHidth: "700px", display: "block" }}>
@@ -563,8 +563,8 @@ function Club(props) {
               </div>
               <div className="promoAppButtons__ImageWrapper-sc-1x241nn-5 gVWkJc">
                 <div
-                  data-gatsby-image-wrapper=""
-                  className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                  data-image_container=""
+                  className="image_container image_container-constrained"
                   style={{ height: "100%" }}
                 >
                   <div style={{ maxHidth: "700px", display: "block" }}>
@@ -628,8 +628,8 @@ function Club(props) {
             >
               <div className="teaser__ImageWrapper-sc-18o2m9g-1 bEldKG">
                 <div
-                  data-gatsby-image-wrapper=""
-                  className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                  data-image_container=""
+                  className="image_container image_container-constrained"
                   style={{ height: "100%" }}
                 >
                   <div style={{ maxHidth: "700px", display: "block" }}>
@@ -722,15 +722,13 @@ function Club(props) {
             <article id="faqs" className="teaser__Block-sc-18o2m9g-0 eiIDKF">
               <div className="teaser__ImageWrapper-sc-18o2m9g-1 dHmxpK">
                 <div
-                  data-gatsby-image-wrapper=""
-                  className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                  
+                  className="image_container image_container-constrained"
                   style={{ height: "100%" }}
                 >
                   <div style={{ maxHidth: "700px", display: "block" }}>
                     <img
                       alt=""
-                      role="presentation"
-                      aria-hidden="true"
                       src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='504'%20width='700'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                       style={{
                         maxHidth: "100%",
@@ -740,14 +738,13 @@ function Club(props) {
                     />
                   </div>
                   <img
-                    aria-hidden="true"
-                    data-placeholder-image=""
+                
                     style={{
                       opacity: "1",
                       transition: "opacity 500ms linear",
                       objectFit: "cover",
                     }}
-                    decoding="async"
+                  
                     src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAOABQDAREAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAACAkH/8QAJBAAAgICAgEEAwEAAAAAAAAABAUDBgECBxEIABUhURQxYdH/xAAYAQADAQEAAAAAAAAAAAAAAAAFBggEB//EACgRAAICAQMDAwQDAAAAAAAAAAECAwQFBhESEyExAAdRCBRBYRUiM//aAAwDAQACEQMRAD8ATKGqvKo8Xh8iHcdrRLYslsVF2UW3c1mWnHK0EMDfjmgBrBrCu2nF2ZL0bh57dgqCFpqtL31F9a9Le5keYyOex2cp1dNSYq9LDW/kMlXhks12t2YKnUinMRFqSGATzRwtJHH1FQOQyO9i5jT8dOlSt465LkhacwmOOnKJDLXrV5bk0QXnvSSawkNad+DWQryIoCOFdd55/wCAuHIuL6VP43N7uOyqKaZxdg7ADXVUNhZERwm7NrhEuKYblCGESdwb4wtiiwLBEFrFILBtPFv6lrSZLV7w4DLzVtN6tyOm4ZhdRcdeFS8a1W3EDWaWOG1A9axweCVkE4QswUuVevoDUORuxImpYaVu5YcwY3ovZnSMf5qtYTdB1bYqAH57huTFt9tBBpsm4+u2Is4+c46676/Xx31jvr7xjr69WKbKHiQeQKgggjuD4Pn49K8tvi5BJ3Hn9H8g7g7d/wAbnb59QQ8uuUOVR7BwJ43KrSQkuHGw93tKvkGaQCxLbJU522R1Y7+t7IK/ALZt170PLYgDeYWc6dxNmcnESX8Kdst7fYyt93UJaSnTVxAjOwlWtbsRtGrSRiLlIhVWPYf3MpLuZWJLXNeZPD5y1NBBC01haluV2PJDJDDIgURSxyhUc2CpHIhFVWjUMoHpc+L1VY+aLajXho+3qUPj65FovJ9FkFnsNev9iWTlPdmyhnKxXFe1u17jSEwawKSDAZtZICJrFjXLEhFxX080JdR3M/T1A0WmsjqTDais6XtYsWwj41KDWMeLkuQZLNXIvUJeSeqrV45+kYrLV0lkKUPdVrGJnc4podQCbIEZeraFboWLyqVnrpFCJI3rygzxsjxv1C3Fo+RY3dFRBQQaR5j12zjHznrH1/f8x6qvc+B2A2AC9gABsAAOw28ADsB47euXPPI7Fix3Pn5PyT+ye59f/9k="
                     alt=""
                   />

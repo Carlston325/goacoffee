@@ -120,8 +120,8 @@ function SustainCommunities() {
           </div>
           <div className="standard__ImageWrapper-sc-mfnc1b-5 kOtuDH">
             <div
-              data-gatsby-image-wrapper=""
-              className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+              data-image_container=""
+              className="image_container image_container-constrained"
               style={{ height: "100%", minHeight: "300px", width: "100%" }}
             >
               <div style={{ maxWidth: "700px", display: "block" }}>
@@ -333,8 +333,8 @@ function SustainCommunities() {
           </div>
           <div className="standard__ImageWrapper-sc-mfnc1b-5 kOtuDH">
             <div
-              data-gatsby-image-wrapper=""
-              className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+              data-image_container=""
+              className="image_container image_container-constrained"
               style={{ height: "100%", minHeight: "300px", width: "100%" }}
             >
               <div style={{ maxWidth: "700px", display: "block" }}>

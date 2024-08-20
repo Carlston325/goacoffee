@@ -36,10 +36,10 @@ function SustainMain() {
             <div className="article_links--Links article_links--sustainability">
               <div className="card">
                 <a href="/sustainability/coffee">
-                  <div alt="" className=""></div>
+                  <div alt=""></div>
                 </a>
-                <div className="">
-                  <div className="">
+                <div>
+                  <div>
                     <h4>Coffee</h4>
                     <p>
                       Sourcing coffee beans in a way that positively impacts
@@ -53,10 +53,10 @@ function SustainMain() {
               </div>
               <div className="card">
                 <a href="/sustainability/cups-and-packaging">
-                  <div alt="" className=""></div>
+                  <div alt=""></div>
                 </a>
-                <div className="">
-                  <div className="">
+                <div>
+                  <div>
                     <h4>Cups and packaging</h4>
                     <p>
                       Championing circular <br />
@@ -70,10 +70,10 @@ function SustainMain() {
               </div>
               <div className="card">
                 <a href="/sustainability/climate">
-                  <div alt="" className=""></div>
+                  <div alt=""></div>
                 </a>
-                <div className="">
-                  <div className="">
+                <div>
+                  <div>
                     <h4>Climate</h4>
                     <p>
                       Cutting emissions (in-line with climate science) to reach
@@ -87,10 +87,10 @@ function SustainMain() {
               </div>
               <div className="card">
                 <a href="/sustainability/communities">
-                  <div alt="" className=""></div>
+                  <div alt=""></div>
                 </a>
-                <div className="">
-                  <div className="">
+                <div>
+                  <div>
                     <h4>Communities</h4>
                     <p>
                       Uplifting communities and acting on the issues that matter
@@ -114,68 +114,68 @@ function SustainMain() {
             <div className="article_links--Links article_links--other_areas">
               <div className="card">
                 <a href="/sustainability/people">
-                  <div alt="" className=""></div>
+                  <div alt="" ></div>
                 </a>
-                <div className="">
-                  <div className="">
+                <div >
+                  <div >
                     <h4>People</h4>
                     <p>
                       Supporting the people at the heart of our business by
                       creating an inclusive work space.
                     </p>
                   </div>
-                  <div className="">
+                  <div >
                     <a href="/sustainability/people">Learn more</a>
                   </div>
                 </div>
               </div>
               <div className="card">
                 <a href="/sustainability/other-ingredients">
-                  <div alt="" className=""></div>
+                  <div alt="" ></div>
                 </a>
-                <div className="">
-                  <div className="">
+                <div >
+                  <div >
                     <h4>Other ingredients</h4>
                     <p>
                       Sustainably sourcing key ingredients, whilst focusing on
                       improving farming practices.
                     </p>
                   </div>
-                  <div className="">
+                  <div >
                     <a href="/sustainability/other-ingredients">Learn more</a>
                   </div>
                 </div>
               </div>
               <div className="card">
                 <a href="/sustainability/nutrition">
-                  <div alt="" className=""></div>
+                  <div alt="" ></div>
                 </a>
-                <div className="">
-                  <div className="">
+                <div >
+                  <div >
                     <h4>Nutrition</h4>
                     <p>
                       Ensuring our delicious food and drink offerings are
                       balanced to help you make better choices.
                     </p>
                   </div>
-                  <div className="">
+                  <div >
                     <a href="/sustainability/nutrition">Learn more</a>
                   </div>
                 </div>
               </div>
               <div className="card">
                 <a href="/sustainability/resources">
-                  <div alt="" className=""></div>
+                  <div alt="" ></div>
                 </a>
-                <div className="">
-                  <div className="">
+                <div >
+                  <div >
                     <h4>Resources</h4>
                     <p>
                       Developing better ways to create less waste, to recycle
                       more, and to reuse wherever possible.
                     </p>
                   </div>
-                  <div className="">
+                  <div >
                     <a href="/sustainability/resources">Learn more</a>
                   </div>
                 </div>

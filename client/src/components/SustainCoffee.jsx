@@ -3,12 +3,9 @@ import React from "react";
 function SustainCoffee() {
   return (
     <>
-      <main
-        className="layout__Main-sc-78ulcb-0 epUgWD"
-        style={{ minHeight: "400px" }}
-      >
-        <article className="richText__Container-sc-g2bix5-0 bsVIun">
-          <div className="richText__Content-sc-g2bix5-1 jEobIm">
+      <main className="epUgWD" style={{ minHeight: "400px" }}>
+        <article className="bsVIun">
+          <div className="jEobIm">
             <h2>Sourcing our coffee beans sustainably</h2>
             <p>
               Coffee is at the absolute core of our business and we believe that
@@ -20,22 +17,15 @@ function SustainCoffee() {
             </p>
           </div>
         </article>
-        <article className="promoGridCollection__CollectionWrapper-sc-huubw1-5 egFTCM">
+
+        <article className="egFTCM">
           <div>
-            <h3 className="promoGridCollection__Heading-sc-huubw1-0 article_title">
-              Our progress and promises
-            </h3>
+            <h3 className="article_title">Our progress and promises</h3>
           </div>
-          <div
-            data-cy="grid-promo__wrapper"
-            className="promoGridCollection__GridWrapper-sc-huubw1-3 iLfAmY"
-          >
-            <div className="promoGridCollection__PromosWrapper-sc-huubw1-2 kbNriO">
-              <div
-                data-cy="no-cta__grid-promo"
-                className="promoGridNoButton__Wrapper-sc-1vkdt96-0 gpBKZs card "
-              >
-                <div className="promoGridNoButton__Content-sc-1vkdt96-4 dOxNqn">
+          <div className="iLfAmY">
+            <div className="kbNriO">
+              <div className="gpBKZs card ">
+                <div className="dOxNqn">
                   <h4>Now</h4>
                   <p>
                     100% of our coffee beans in the UK are Rainforest Alliance
@@ -43,11 +33,8 @@ function SustainCoffee() {
                   </p>
                 </div>
               </div>
-              <div
-                data-cy="no-cta__grid-promo"
-                className="promoGridNoButton__Wrapper-sc-1vkdt96-0 gpBKZs card"
-              >
-                <div className="promoGridNoButton__Content-sc-1vkdt96-4 dOxNqn">
+              <div className="gpBKZs card">
+                <div className="dOxNqn">
                   <h4>Near</h4>
                   <p>
                     We’ll collaborate with coffee experts to run projects
@@ -57,11 +44,8 @@ function SustainCoffee() {
                   <p></p>
                 </div>
               </div>
-              <div
-                data-cy="no-cta__grid-promo"
-                className="promoGridNoButton__Wrapper-sc-1vkdt96-0 gpBKZs card"
-              >
-                <div className="promoGridNoButton__Content-sc-1vkdt96-4 dOxNqn">
+              <div className="gpBKZs card">
+                <div className="dOxNqn">
                   <h4>Next</h4>
                   <p>
                     We’ll assess the impact our business has on nature, and set
@@ -72,16 +56,10 @@ function SustainCoffee() {
             </div>
           </div>
         </article>
-        <article className="richText__Container-sc-g2bix5-0 bsVIun">
-          <div className="richText__Content-sc-g2bix5-1 ldNozT">
-            <h2>
-              <a
-                href="#"
-                id="rainforest-alliance"
-                aria-label="rainforest-alliance anchor"
-              ></a>
-              Our work with the Rainforest Alliance&nbsp;
-            </h2>
+
+        <article className="bsVIun">
+          <div className="ldNozT">
+            <h2>Our work with the Rainforest Alliance&nbsp;</h2>
             <p>
               We ensure that 100% of our coffee beans come from Rainforest
               Alliance Certified farms. This means that for every cup of coffee
@@ -99,25 +77,16 @@ function SustainCoffee() {
               <br />
               We'll return to sourcing all our coffee from Rainforest Alliance
               Certified farms as soon as these disruptions ease. Find out more
-              <a
-                href="https://www.rainforest-alliance.org/business/certification/coffee-supply-chain-disruptions/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.rainforest-alliance.org/business/certification/coffee-supply-chain-disruptions/">
                 here
               </a>
               .
             </p>
             <h3>A better future for nature, people and businesses</h3>
             <p>
-              <span className="clear"></span>
               <div className="inline-right coffee_source_image"></div>
               The{" "}
-              <a
-                href="https://www.rainforest-alliance.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.rainforest-alliance.org">
                 Rainforest Alliance
               </a>{" "}
               is an international non-profit organisation, working to create a
@@ -140,9 +109,10 @@ function SustainCoffee() {
             </p>
           </div>
         </article>
-        <article id="whats-next" className="standard__Block-sc-mfnc1b-0 dfSiCt">
-          <div className="standard__Content-sc-mfnc1b-1 dhXnTr">
-            <div className="standard__RichText-sc-mfnc1b-4 eeECea">
+
+        <article id="whats-next" className="dfSiCt">
+          <div className="dhXnTr">
+            <div className="eeECea">
               <h3>Cups and packaging</h3>
               <p>
                 We're creating, choosing and championing more sustainable cups
@@ -150,9 +120,9 @@ function SustainCoffee() {
                 wherever we can.
               </p>
             </div>
-            <ul className="standard__LinkCtaList-sc-mfnc1b-3 gsgHhh">
+            <ul className="gsgHhh">
               <li>
-                <span className="linkCta__StyledLinkCta-sc-1bq328k-0 jkcThw linkCta">
+                <span className="jkcThw linkCta">
                   <a
                     className="link btnDark"
                     href="/sustainability/cups-and-packaging"
@@ -162,7 +132,7 @@ function SustainCoffee() {
                 </span>
               </li>
               <li>
-                <span className="linkCta__StyledLinkCta-sc-1bq328k-0 kuucrm linkCta">
+                <span className="kuucrm linkCta">
                   <a className="link btnDark" href="/sustainability">
                     Back to Sustainability
                   </a>
@@ -172,12 +142,10 @@ function SustainCoffee() {
           </div>
           <div className="kOtuDH">
             <div
-              className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+              className="image_container image_container-constrained"
               style={{ height: "100%", minHeight: "300px", width: "100%" }}
             >
-              <div style={{ maxWidth: "700px", display: "block" }}>
-                <div className="article_bottom_image--cups_n_packages"></div>
-              </div>
+              <div className="article_bottom_image--cups_n_packages"></div>
             </div>
           </div>
         </article>

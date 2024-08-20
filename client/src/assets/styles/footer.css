@@ -1,3 +1,12 @@
+footer h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  font-weight: 600 !important;
+}
 .lkzBev {
   background: #b55928;
   color: rgb(255, 255, 255);
@@ -27,7 +36,6 @@
   padding: 20px 5px;
   font-size: 60px;
   line-height: 24px;
-  font-weight: normal !important;
 }
 .lfPKDg {
   list-style: none;
