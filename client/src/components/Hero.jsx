@@ -113,8 +113,6 @@ function Hero(props) {
                       <div className="linkCta prudY">
                         <a
                           href="/menu"
-                          target="_self"
-                          rel="noreferrer"
                           className="btnLight"
                           style={{ fontSize: "50px", padding: "15px 20px" }}
                         >
@@ -127,17 +125,17 @@ function Hero(props) {
               </div>
             </div>
             <div className="hero__ContentLower jLrlMs hero__MaskImage">
-              <div className="hero__LowerHeroContentSection-sc-1okgybi-15 gXMpMb">
+              <div className="gXMpMb">
                 <h1 className="title darkFont">Buy 10 drinks, get 1 free</h1>
                 <h5 className="subtitle darkFont">
                   Join Carlston's Coffee Club and earn 1 bean with every
                   handcrafted drink you buy. Collect 10 beans, and your next
                   drink is free.
                 </h5>
-                <div className="hero__LowerLinkCta-sc-1okgybi-13 ZXxhu">
+                <div className="ZXxhu">
                   <ul>
                     <li>
-                      <div className="linkCta__StyledLinkCta-sc-1bq328k-0 prudY linkCta">
+                      <div className=" prudY linkCta">
                         <Link
                           className="btnLight"
                           to="/carlstons-club#app-promo"
@@ -163,8 +161,8 @@ function Hero(props) {
               alt="hero backgeound"
             ></div>
           </div>
-          <div className="hero__ContentWrapper-sc-4z1t7h-7 iJhQuc">
-            <div className="hero__Content-sc-4z1t7h-9 QTmsr">
+          <div className="iJhQuc">
+            <div className="QTmsr">
               <h1 className="title">Our menu</h1>
               <p className="subtitle">
                 Whatever your diet or preferences, there’s enough choice
@@ -194,7 +192,7 @@ function Hero(props) {
           {param === "login" ||
           param === "register" ||
           param === "account" ? null : (
-            <div className="heroWithTextBox__Content-sc-v1ljj7-3 dYZPvR">
+            <div className="dYZPvR">
               <h1 className="title darkFont">Let the free times roll</h1>
               <p className="subtitle darkFont">
                 Use our app for the best Carlston's Club experience.
@@ -202,11 +200,9 @@ function Hero(props) {
               </p>
               <ul>
                 <li>
-                  <span className="linkCta__StyledLinkCta-sc-1bq328k-0 jkcThw linkCta">
+                  <span className=" jkcThw linkCta">
                     <a
                       href="https://swf3j.app.goo.gl/QbMrq"
-                      target="_self"
-                      rel="noreferrer"
                       className="link btnDark"
                     >
                       Join Carlstons Club
@@ -214,13 +210,8 @@ function Hero(props) {
                   </span>
                 </li>
                 <li>
-                  <span className="linkCta__StyledLinkCta-sc-1bq328k-0 kuucrm linkCta">
-                    <a
-                      href="/carlstons-club/login/"
-                      target="_self"
-                      rel="noreferrer"
-                      className="link btnLight"
-                    >
+                  <span className=" kuucrm linkCta">
+                    <a href="/carlstons-club/login/" className="link btnLight">
                       I'm already a member
                     </a>
                   </span>
@@ -234,38 +225,29 @@ function Hero(props) {
       {/* ORDER ONLINE PAGE HERO */}
       {currentPage === "order-online" && (
         <>
-          <div
-            className="hero__Wrapper-sc-4z1t7h-0 cBlReJ"
-            style={heroHeightStyle}
-          >
+          <div className="cBlReJ" style={heroHeightStyle}>
             <div className="hero__HeroImage" style={heroHeightStyle}>
               <div
                 style={{ width: "100%", height: "100%" }}
                 alt="hero backgeound"
               ></div>
             </div>
-            <div className="hero__ContentWrapper-sc-4z1t7h-7 iJhQuc">
-              <div className="hero__Content-sc-4z1t7h-9 ixksLY">
+            <div className="iJhQuc">
+              <div className="ixksLY">
                 <h1 className="title">{title}</h1>
                 <p className="subtitle">{subtitle}</p>
               </div>
             </div>
           </div>
-          <ul className="secondaryNav__Wrapper-sc-1jcss09-0 irxGhK">
-            <li
-              className={
-                "secondaryNav__StyledLink-sc-1jcss09-1 " +
-                (param === "delivery" ? linedClass : normalClass)
-              }
-            >
+          <ul className="irxGhK">
+            <li className={param === "delivery" ? linedClass : normalClass}>
               <a className="link" href="/order-online/delivery">
                 Delivery
               </a>
             </li>
             <li
               className={
-                "secondaryNav__StyledLink-sc-1jcss09-1 " +
-                (param === "click-and-collect" ? linedClass : normalClass)
+                param === "click-and-collect" ? linedClass : normalClass
               }
             >
               <a className="link" href="/order-online/click-and-collect">
@@ -279,64 +261,41 @@ function Hero(props) {
       {/* SUSTAINABILITY PAGE HERO */}
       {currentPage === "sustainability" && (
         <>
-          <div
-            className="hero__Wrapper-sc-4z1t7h-0 cBlReJ"
-            style={heroHeightStyle}
-          >
+          <div className="cBlReJ" style={heroHeightStyle}>
             <div className="hero__HeroImage" style={{ height: "448px" }}>
               <div
                 style={{ width: "100%", height: "100%" }}
                 alt="hero backgeound"
               ></div>
             </div>
-            <div className="hero__ContentWrapper-sc-4z1t7h-7 iJhQuc">
-              <div className="hero__Content-sc-4z1t7h-9 ixksLY">
+            <div className="iJhQuc">
+              <div className="ixksLY">
                 <h1 className="title">{title}</h1>
                 <p className="subtitle">{subtitle}</p>
               </div>
             </div>
           </div>
-          <ul className="secondaryNav__Wrapper-sc-1jcss09-0 irxGhK">
-            <li
-              className={
-                "secondaryNav__StyledLink-sc-1jcss09-1 " +
-                (param === "coffee" ? linedClass : normalClass)
-              }
-            >
-              <a
-                aria-current="page"
-                className="link"
-                href="/sustainability/coffee"
-              >
+          <ul className="irxGhK">
+            <li className={param === "coffee" ? linedClass : normalClass}>
+              <a className="link" href="/sustainability/coffee">
                 Coffee
               </a>
             </li>
             <li
               className={
-                "secondaryNav__StyledLink-sc-1jcss09-1 " +
-                (param === "cups-and-packaging" ? linedClass : normalClass)
+                param === "cups-and-packaging" ? linedClass : normalClass
               }
             >
               <a className="link" href="/sustainability/cups-and-packaging">
                 Cups and packaging
               </a>
             </li>
-            <li
-              className={
-                "secondaryNav__StyledLink-sc-1jcss09-1 " +
-                (param === "climate" ? linedClass : normalClass)
-              }
-            >
+            <li className={param === "climate" ? linedClass : normalClass}>
               <a className="link" href="/sustainability/climate">
                 Climate
               </a>
             </li>
-            <li
-              className={
-                "secondaryNav__StyledLink-sc-1jcss09-1 " +
-                (param === "communities" ? linedClass : normalClass)
-              }
-            >
+            <li className={param === "communities" ? linedClass : normalClass}>
               <a className="link" href="/sustainability/communities">
                 Communities
               </a>
@@ -348,26 +307,22 @@ function Hero(props) {
       {/* ABOUT PAGE HERO */}
       {currentPage === "about" && (
         <>
-          <div className="hero__Wrapper-sc-4z1t7h-0 cCjZSE">
-            <div className="hero__Gradient-sc-4z1t7h-5 eSYkUV"></div>
-            <div className="hero__ContentWrapper-sc-4z1t7h-7 iJhQuc">
-              <div className="hero__Content-sc-4z1t7h-9 drhYgE">
+          <div className="cCjZSE">
+            <div className="eSYkUV"></div>
+            <div className="iJhQuc">
+              <div className="drhYgE">
                 <h1>Our history</h1>
                 <p>We know great tasting coffee.</p>
               </div>
             </div>
           </div>
-          <ul className="secondaryNav__Wrapper-sc-1jcss09-0 irxGhK">
-            <li className="secondaryNav__StyledLink-sc-1jcss09-1 kOaOjQ">
-              <a
-                aria-current="page"
-                className="link"
-                href="/behind-the-beans/our-story/history"
-              >
+          <ul className=" irxGhK">
+            <li className="kOaOjQ">
+              <a className="link" href="/behind-the-beans/our-story/history">
                 Our history
               </a>
             </li>
-            <li className="secondaryNav__StyledLink-sc-1jcss09-1 kcgvpH">
+            <li className="kcgvpH">
               <a className="link" href="/behind-the-beans/our-story/roastery">
                 The Roastery
               </a>
@@ -379,11 +334,11 @@ function Hero(props) {
       {/* CONTACT PAGE HERO */}
       {currentPage === "contact" && (
         <div>
-          {/* <div className="heroWithTextBox__Hero-sc-v1ljj7-0 hqRUBn">
-            <div className="heroWithTextBox__Gradient-sc-v1ljj7-1 hezRSH"></div>
-            <div className="heroWithTextBox__Wrapper-sc-v1ljj7-2 hTVhZY"></div>
+          {/* <div className="hqRUBn">
+            <div className="hezRSH"></div>
+            <div className="hTVhZY"></div>
           </div>
-          <div className="heroWithTextBox__Content-sc-v1ljj7-3 dYZPvR">
+          <div className="dYZPvR">
             <h1>Let the free times roll</h1>
             <p>
               Use our app for the best carlstons Club experience.
@@ -391,11 +346,11 @@ function Hero(props) {
             </p>
             <ul>
               <li>
-                <span className="linkCta__StyledLinkCta-sc-1bq328k-0 jkcThw linkCta">
+                <span className="jkcThw linkCta">
                   <a
                     href="https://swf3j.app.goo.gl/QbMrq"
-                    target="_self"
-                    rel="noreferrer"
+          
+                
                     className="link"
                   >
                     Join carlstons Club
@@ -403,13 +358,8 @@ function Hero(props) {
                 </span>
               </li>
               <li>
-                <span className="linkCta__StyledLinkCta-sc-1bq328k-0 kuucrm linkCta">
-                  <a
-                    href="/carlstons-club/login/"
-                    target="_self"
-                    rel="noreferrer"
-                    className="link"
-                  >
+                <span className=" kuucrm linkCta">
+                  <a href="/carlstons-club/login/" className="link">
                     I'm already a member
                   </a>
                 </span>

@@ -4,6 +4,7 @@ import Login from "./LoginPage";
 import Register from "../components/Register";
 import AccountPage from "../pages/AccountPage";
 import { useEffect, useState } from "react";
+import ErrorPage from "../components/ErrorPage";
 
 function Club(props) {
   const location = useLocation();
@@ -25,19 +26,13 @@ function Club(props) {
     if (!id) {
       return (
         <>
-          <main
-            className="layout__Main-sc-78ulcb-0 epUgWD"
-            style={{ minHeight: "400px" }}
-          >
-            <article
-              id="benefits-buy-8-get-1-free"
-              className="campaign__Wrapper-sc-16ld8np-0 TSqrt"
-            >
-              <div className="campaign__Block-sc-16ld8np-3 iXqvQq">
-                <div className="campaign__Content-sc-16ld8np-4 erUGdY">
-                  <div className="campaign__WaveBorderWrapper-sc-16ld8np-1 fApSXy">
+          <main className="epUgWD" style={{ minHeight: "400px" }}>
+            <article id="benefits-buy-8-get-1-free" className="TSqrt">
+              <div className="iXqvQq">
+                <div className="erUGdY">
+                  <div className="fApSXy">
                     <svg
-                      className="WaveSeparator__Icon-sc-15tvo71-0 WaveSeparator__Svg-sc-15tvo71-1 SKWzF gKjwnn campaign__StyledWaveBorder-sc-16ld8np-2 jEEIsK"
+                      className="gKjwnn campaign__StyledWaveBorder-sc-16ld8np-2 jEEIsK"
                       version="1.1"
                       xmlns="http://www.w3.org/2000/svg"
                       xlink="http://www.w3.org/1999/xlink"
@@ -56,7 +51,7 @@ function Club(props) {
                       </g>
                     </svg>
                   </div>
-                  <div className="campaign__RichText-sc-16ld8np-7 ZyPuC">
+                  <div className="ZyPuC">
                     <h3>
                       Buy 10 drinks
                       <br />
@@ -68,9 +63,8 @@ function Club(props) {
                     </p>
                   </div>
                 </div>
-                <div className="campaign__ImageWrapper-sc-16ld8np-8 jGsTUj">
+                <div className="jGsTUj">
                   <div
-                    data-image_container=""
                     className="image_container image_container-constrained"
                     style={{
                       height: "100%",
@@ -82,7 +76,6 @@ function Club(props) {
                       <img
                         alt=""
                         role="presentation"
-                        aria-hidden="true"
                         src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='515'%20width='700'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style={{
                           maxWidth: "100%",
@@ -92,14 +85,11 @@ function Club(props) {
                       />
                     </div>
                     <img
-                      aria-hidden="true"
-                      data-placeholder-image=""
                       style={{
                         opacity: "0",
                         transition: "opacity 500ms linear 0s",
                         objectFit: "cover",
                       }}
-                      decoding="async"
                       src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAPABQDAREAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABwgJCv/EACcQAAICAwABAgUFAAAAAAAAAAQFAgMBBgcIExQACREVIRIiQVGS/8QAGQEAAgMBAAAAAAAAAAAAAAAABwgEBQYJ/8QAKxEAAgMAAQIEAwkAAAAAAAAAAgMBBAUGEhMHERQhACNBCDEyQlGCkcHw/9oADAMBAAIRAxEAPwDPqRq7OKnWG4YZhouzXsFYlg9Gb427CtOhSSiHjR6llrCsA9CdkTMMESrdByhXKF1WZRBOCNi/zBI+31kTGJEvL9JLqGJ+sjMfT46Ry5YS2GGAQoIackXTApmC+aRF5DARIMiS85GICfOY94iuXj34l8y5Z2fib7olem9Sqe+PXRekPOQ9CT7GwCM30HWOihL1MEwQmvSYhLCE6ja1i4xnNm3DspMGBlRIEmwTcm5pyrIyL1vOwmXLEa+b6SSzrLAThW9elUsutVa9wbZ2a9B7bUMT8oQhb3AK+4peG2+V4GhWt5lPkUZdv1teiFtGhSSxlgH1+8mraZBqVByL1kbBgoIW1hgiXDWv9D5FHPu+DhdnF7is8fKOlr1+31ca1jkhzXX9Ag4CoJgmVF7L1299gaUJRN9ozt9wvtLtA9IasaAtBh4dm6+5xjE2NhXoNDToruvqKqtAEjYImV4hb3m5ZFWlJmtpdwDIhKBmJGFx3/tUU+I7OjxmtlJ5OrDslnTu2eQgh+g6vAhaNgV8UkTKrXerw1JEt4pFwGcMgyr3qvjp41eNFSh3498O0bS3CJsW2HiwCv2Ew6bIMde2guf7Ba52BA4KXi0VAnr3y5fMoVf9/EagCUj07axxV3Wu5jTXRoVxkeloySLaJLrmvYIi7kT1RPYaM+aJa7p8u6RQrFzx+1dtdrL8Q9ba08PSUKiZWfFd2faXDfSW00qSVUbKVuZDLtewhhvSvoSS2e5Lhv2uc26X0Rxv3RuT7CF0YfbND22e1X7mBkB1Ro68q/n6IBLqd4s1wukHHlMHOXBTH7zsl9sKbXOujr8j2HG+J6t69btchpIrjXfQtUjQ9fbc/wBF88BFD22BGm4uycWDEbLF90O4mfMh54qeK/DePcexc7w75TY3bl9fKszbrPx9GtYzM5O0Csy46xrZ9TPsM5HRUd+rGYlr8qk/0t4KejErAnWd4IjOeM3l4ziWcZx74z8fT+P2g/p/z+P6+CnHHJmImBD3iJ/AH9t/33/Cin4qRBlEudExMxMd+17T+2rA/wAe3x//2Q=="
                       alt=""
                     />
@@ -116,10 +106,8 @@ function Club(props) {
                       <img
                         width="700"
                         height="515"
-                        data-main-image=""
                         style={{ objectFit: "cover", opacity: "1" }}
                         sizes="(min-width: 700px) 700px, 100vw"
-                        decoding="async"
                         loading="lazy"
                         src="https://images.ctfassets.net/royi30b2qd26/2FgdBMr1lKoIqvTL9Dc3ns/f5594b9f1d7fe91f9412954a3b3415e9/costa-club-buy10get1free-lilac-gradient-696x512.jpg?w=700&amp;h=515&amp;fl=progressive&amp;q=100&amp;fm=jpg"
                         srcSet="
@@ -134,15 +122,12 @@ function Club(props) {
                 </div>
               </div>
             </article>
-            <article
-              id="benefits-free-cake-on-your-birthday"
-              className="campaign__Wrapper-sc-16ld8np-0 TSqrt"
-            >
-              <div className="campaign__Block-sc-16ld8np-3 fzYmkP">
-                <div className="campaign__Content-sc-16ld8np-4 cVLYLk">
-                  <div className="campaign__WaveBorderWrapper-sc-16ld8np-1 iLHITb">
+            <article id="benefits-free-cake-on-your-birthday" className="TSqrt">
+              <div className="fzYmkP">
+                <div className="cVLYLk">
+                  <div className="iLHITb">
                     <svg
-                      className="WaveSeparator__Icon-sc-15tvo71-0 WaveSeparator__Svg-sc-15tvo71-1 SKWzF gKjwnn campaign__StyledWaveBorder-sc-16ld8np-2 cblEFG"
+                      className=" SKWzF gKjwnn cblEFG"
                       version="1.1"
                       xmlns="http://www.w3.org/2000/svg"
                       xlink="http://www.w3.org/1999/xlink"
@@ -161,7 +146,7 @@ function Club(props) {
                       </g>
                     </svg>
                   </div>
-                  <div className="campaign__RichText-sc-16ld8np-7 ZyPuC">
+                  <div className="ZyPuC">
                     <h3>
                       Free cake <br />
                       on your birthday
@@ -173,9 +158,8 @@ function Club(props) {
                     </p>
                   </div>
                 </div>
-                <div className="campaign__ImageWrapper-sc-16ld8np-8 jGsTUj">
+                <div className="jGsTUj">
                   <div
-                    data-image_container=""
                     className="image_container image_container-constrained"
                     style={{
                       height: "100%",
@@ -186,8 +170,6 @@ function Club(props) {
                     <div style={{ maxWidth: "700px", display: "block" }}>
                       <img
                         alt=""
-                        role="presentation"
-                        aria-hidden="true"
                         src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='515'%20width='700'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style={{
                           maxWidth: "100%",
@@ -197,14 +179,11 @@ function Club(props) {
                       />
                     </div>
                     <img
-                      aria-hidden="true"
-                      data-placeholder-image=""
                       style={{
                         opacity: "0",
                         transition: "opacity 500ms linear 0s",
                         objectFit: "cover",
                       }}
-                      decoding="async"
                       src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAPABQDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EACcQAAEEAgEDAgcAAAAAAAAAAAQCAwUGAQcICRIUCjIRExUWISJB/8QAFwEBAQEBAAAAAAAAAAAAAAAABQcJBv/EACkRAAICAQMDAgYDAAAAAAAAAAIDAQQFBhESABMhBwgUFiIjQWFk0eP/2gAMAwEAAhEDEQA/AAV1tSSrmdaH0DvvxdHoNz2JYvHFWU63AU+EJkz1tIwppjD/AOraRkkkitkP5bFacWW+MO8BmconF1kMaUCVu7UoIiS4yTrTYAYifM+BgymYieIxJFsAlMaJ5u3ao42xZprBtlXbIFsLiBjDQlokWxEPNUGEGC2mBEJwpnHjKf8AG7pMz3LmcXL6n3dq2C1CzFR8mu5TNoirfYT8H4SU+PB1SpFZdIIrY50ZEWhFnPpjgViSW00PkEmLeKUwNW3lxmLB102Bn6kjMy0lxA/cWmJMpXJzOxQwhgZASPucoiO6u9cqmhMPXu5rAZG3bulMVQo8Bxae2pazVkM2ySqLtssrtGFeoq0xdftQ1YsFkyiKfTl0nCG0uc1iVOpQlLy29JApaW7j3qaRnbTmUN5z7UZdezj8/F1X86z5XPx90/H8b/X++oqXvMDkW2jae288Y+aCmYj8RMxg4iZ/cREfqOk4mOGHFfWEHGx+jdF0mgIMssSbbynJi0+dZa7G5fJXW5Mt37kNsUKcZ8hqQrUueJEHgLMYWSMp7KlA6+9K36xx9BOEuUcTlcbcbar3rKGviFOqPrNr8gOHLFpGlhMXMmEoGA33nqL6c902WxN/I2df289qTF3cZ8EmjXnHqmtam5VcN6umEJpqtJSl4JbISXcaJFMcBmAfjelpvjjzvS63Xi9yPreoqcbaGrTSoUmIn7ZY6252u4H85RAkTBmFRMefN1kMsrM39TrMoWFNCvLKJy4tp70q1YldO1czuMRfqT4tURuMUZDyDudpg19+6ud3V2iSZIiGJKIEoL1l7yvTe1jr2BsaEz2co5OuEZGjkG4ykJtEfpcDksukhyi3lFyuY2FzAMGAkRGHDrO8LaHXoUW6TIUxbRowJiyStfHloGEkZlphCJA2KhjHpsmLBJJw46OC/LyLgzaktKLeynvzeK+m3whMPlDH9sO8xSRWo2cY5EtZ2GEATPmBIymPyUz1nxkvVegWQuljYv1aBWXTTrXLzrVpFaTmVKsWUY6ql7QDYTauukDmOULHfbr/2Q=="
                       alt=""
                     />
@@ -221,10 +200,8 @@ function Club(props) {
                       <img
                         width="700"
                         height="515"
-                        data-main-image=""
                         style={{ objectFit: "cover", opacity: "1" }}
                         sizes="(min-width: 700px) 700px, 100vw"
-                        decoding="async"
                         loading="lazy"
                         src="https://images.ctfassets.net/royi30b2qd26/2Qhj5A5csEjIvKLpd0CAlo/d62f8729f9e27161e69a36e19cd29b64/costa-club-birthdaycakejul23-696x512.jpg?w=700&amp;h=515&amp;fl=progressive&amp;q=100&amp;fm=jpg"
                         srcSet="
@@ -239,15 +216,12 @@ function Club(props) {
                 </div>
               </div>
             </article>
-            <article
-              id="benefits-buy-4-get-1-free"
-              className="campaign__Wrapper-sc-16ld8np-0 TSqrt"
-            >
-              <div className="campaign__Block-sc-16ld8np-3 iXqvQq">
-                <div className="campaign__Content-sc-16ld8np-4 erUGdY">
-                  <div className="campaign__WaveBorderWrapper-sc-16ld8np-1 fApSXy">
+            <article id="benefits-buy-4-get-1-free" className="TSqrt">
+              <div className="iXqvQq">
+                <div className="erUGdY">
+                  <div className="fApSXy">
                     <svg
-                      className="WaveSeparator__Icon-sc-15tvo71-0 WaveSeparator__Svg-sc-15tvo71-1 SKWzF gKjwnn campaign__StyledWaveBorder-sc-16ld8np-2 jEEIsK"
+                      className=" SKWzF gKjwnn campaign__StyledWaveBorder-sc-16ld8np-2 jEEIsK"
                       version="1.1"
                       xmlns="http://www.w3.org/2000/svg"
                       xlink="http://www.w3.org/1999/xlink"
@@ -266,7 +240,7 @@ function Club(props) {
                       </g>
                     </svg>
                   </div>
-                  <div className="campaign__RichText-sc-16ld8np-7 ZyPuC">
+                  <div className="ZyPuC">
                     <h3>
                       Get your <br />
                       free drink faster
@@ -277,9 +251,8 @@ function Club(props) {
                     </p>
                   </div>
                 </div>
-                <div className="campaign__ImageWrapper-sc-16ld8np-8 jGsTUj">
+                <div className="jGsTUj">
                   <div
-                    data-image_container=""
                     className="image_container image_container-constrained"
                     style={{
                       height: "100%",
@@ -291,7 +264,6 @@ function Club(props) {
                       <img
                         alt=""
                         role="presentation"
-                        aria-hidden="true"
                         src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='515'%20width='700'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style={{
                           maxWidth: "100%",
@@ -301,14 +273,11 @@ function Club(props) {
                       />
                     </div>
                     <img
-                      aria-hidden="true"
-                      data-placeholder-image=""
                       style={{
                         opacity: "1",
                         transition: "opacity 500ms linear",
                         objectFit: "cover",
                       }}
-                      decoding="async"
                       src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAPABQDAREAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAACQj/xAAhEAACAwEAAgIDAQAAAAAAAAAEBQIDBgcBCAAUCQoREv/EABgBAAMBAQAAAAAAAAAAAAAAAAQGBwkF/8QAJREAAwEBAAEEAQQDAAAAAAAAAgMEAQUGAAcREiEIExQxCRYi/9oADAMBAAIRAxEAPwAL+Jc40/TNcUox+aa7PRK8+3eJ8ekzjPUtNS2FqgMqSjKVwBni6q1gYOa0+zctlJIC0qUGz0liQA4UquXJ8N69IyyfVn/W0qk024siSvHtMMASbgY0h3TFP30B0vjPWgPl9HQTxHq5lcXOruaiDOn0N+ZeZPSf1tvJeNSbqERZRsKgPBLoFLtGrkyhq0O55+LzVdXpG22z7Fx310zjQYQ5xT1XWZ3PaUbQXk6TxrEarnLF6teJZ5k9PctoA1bJZUZBW8Mpdefo/RiPtkjbGfwqeaXLaP70DN6k2NyfVc7Vq0aK2uoLTfb9aTMcNcgaRHr1uakp818i4fCghp8O818w8jkmGe2jg+M9arl1agGCHT3rx850JotStNRbEp5p2wAZMolvBKJoP15uZ6REm0Cb3mqcKnSsFovbKePpmCpmIePAkc5aaB2E0IkIim2Fg9wpxtFkPPidRV0JRl8b0ePbShNCqDJblA0CxAlmiwcLNwgeYb+Nz8iZD8/0W5+fUH6f6uaeP0ruV0fAlQ386t8dcdfkNE9Uz52EtqaEP8fS5TQMdwwalRjv4JY7m56QDrfpJ68cpp42+9W+C53nepynbM5o9Do1JciNERjI5vXK2i0xtqXlrJgmm2Zoi7k1Dn/VhQYhdQdv1Z+YJ/vD7f8AT8h8LfJ4xwJe72k2zul57qI5QYJA5LNOjo2RpwB/cEtDaBLdHNH5+PjZF7e/qSq/2Wvfc/zHop8fq4Vk4m+Wqqdd40x0TErncLm0fSg1IpUNRTbgAbAMxxmb6kTn3oJyvDa7Y6jsDAjrDFxp9A4SZy2xsGhUhnabS6BKzP8A4YPcVooD7HSr3EPNxyguDCNsRfN41BEaB4X7N8zkSShd+3UuSVccs+aYpUhCpVIw9Asa1yRnNZER4pgH86JFnz64HvH/AJEvMOvwuT4r7fzU+JDJzuYPX6x/xbOnZcgewvppkF6Gc6Ti3/y+XTOOSn05aOQr6UKW1i9vdT14DNKlmcQh1pESBeElSpVdlwKxQpVjVArli4IRdWKGCCJRSKIKNXXQOPVXTVCMIR8fLOrxkVrWtS1LUAACwBSxAAEcEBAcbmCIjmYI5mZmZ/Wes6uh7w19C+2/o322dC6qiy6uqy19VVlLTdTTQ85iNz3uM2uaZETGERlu7u76/9k="
                       alt=""
                     />
@@ -325,10 +294,8 @@ function Club(props) {
                       <img
                         width="700"
                         height="515"
-                        data-main-image=""
                         style={{ objectFit: "cover", opacity: "0" }}
                         sizes="(min-width: 700px) 700px, 100vw"
-                        decoding="async"
                         loading="lazy"
                         src="https://images.ctfassets.net/royi30b2qd26/4XopMBQ0l062UiLLHnVm1U/fdf39c48cf25920c4485679720f2b295/costa-club-buy5get1free-696x512.jpg?w=700&amp;h=515&amp;fl=progressive&amp;q=100&amp;fm=jpg"
                         srcSet="
@@ -343,15 +310,12 @@ function Club(props) {
                 </div>
               </div>
             </article>
-            <article
-              id="benefits-exclusive-rewards"
-              className="campaign__Wrapper-sc-16ld8np-0 TSqrt"
-            >
-              <div className="campaign__Block-sc-16ld8np-3 fzYmkP">
-                <div className="campaign__Content-sc-16ld8np-4 cVLYLk">
-                  <div className="campaign__WaveBorderWrapper-sc-16ld8np-1 iLHITb">
+            <article id="benefits-exclusive-rewards" className="TSqrt">
+              <div className="fzYmkP">
+                <div className="cVLYLk">
+                  <div className="iLHITb">
                     <svg
-                      className="WaveSeparator__Icon-sc-15tvo71-0 WaveSeparator__Svg-sc-15tvo71-1 SKWzF gKjwnn campaign__StyledWaveBorder-sc-16ld8np-2 cblEFG"
+                      className="SKWzF gKjwnn cblEFG"
                       version="1.1"
                       xmlns="http://www.w3.org/2000/svg"
                       xlink="http://www.w3.org/1999/xlink"
@@ -370,7 +334,7 @@ function Club(props) {
                       </g>
                     </svg>
                   </div>
-                  <div className="campaign__RichText-sc-16ld8np-7 ZyPuC">
+                  <div className="ZyPuC">
                     <h3>Exclusive rewards</h3>
                     <p>
                       Discover exclusive bonus beans and money-off rewards.
@@ -379,9 +343,8 @@ function Club(props) {
                     </p>
                   </div>
                 </div>
-                <div className="campaign__ImageWrapper-sc-16ld8np-8 jGsTUj">
+                <div className="jGsTUj">
                   <div
-                    data-image_container=""
                     className="image_container image_container-constrained"
                     style={{
                       height: "100%",
@@ -393,7 +356,6 @@ function Club(props) {
                       <img
                         alt=""
                         role="presentation"
-                        aria-hidden="true"
                         src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='515'%20width='700'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style={{
                           maxHidth: "100%",
@@ -403,14 +365,11 @@ function Club(props) {
                       />
                     </div>
                     <img
-                      aria-hidden="true"
-                      data-placeholder-image=""
                       style={{
                         opacity: "1",
                         transition: "opacity 500ms linear",
                         objectFit: "cover",
                       }}
-                      decoding="async"
                       src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAPABQDAREAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAACAkK/8QAJBAAAgIDAQABAwUAAAAAAAAABAUCAwEGBwgTAAlBERIUITH/xAAZAQADAAMAAAAAAAAAAAAAAAAEBQYCBwj/xAAmEQACAgEDBAMAAwEAAAAAAAABAgMEEQUGEgATFCEHIkEjMTNR/9oADAMBAAIRAxEAPwDLpqSdaXdIJkCcRIuVGBSls8SOFthKWZxpAu/Qdn/KqlKqAcrQ7plRF+A6mPz0kLwFDhpJO3EqsZC3EKFOMOzMPqE9n+wCCc/hHctqDVUpyyaPRGpagg5w6cEnee+wVgKdXxw8i2p3KLC3ZnUv/GyDmZUrvyH7WHo70jxbofo7jnIRgNb101SKJzezYLaNlzGWtLdjfXa8ocMWLhpNUKwCHlhi0iMa3nsK1ZIgxJBdLBWgiirhbxuc8yeUohw8fKTgriFO2DjHIoFChQeTFiywej/JF6jrrbf3jor7Ys0ZJ6moC6s72YbiCPtxWFZYTVCuzLKzRS8jxbEKZbojLuWH4olWSFZURRdcPdVOGYyqtpl8dtco/iVdmJQlj8ZxnH9/79Fg59j2D7BH71to6kjcXidGjdVdGXDKysMqysDghhggj8PVRPWHO3Hirn/jFLzXkHDp6F0Tznom+uOjbJzDn7/qO29gblyedCgbu7KLToeuhrMYSLlomvN1SGSJgaqFJOGtKGFWXKA1CpZrySyRibCgofShWWRfpnDAsv2HrK5AK5z0l+Lt3PT3Lqe4o7Nt9W0LWtSrV6Xl24qVeg9SfTa7xRR8arThLFiWOaSOWWK1HFOYwUXk1/A/3Zt14BzjddTY8L0fZHe1tzWQ7FOynrS4iFaFWl1OpqNSITMYTVqlto9yxVVSI/FPsKxlG9y2cPx6GkNTh8d51dE/yZI+BUMSzqyZwckkq2eS5IPIFQkj8m7bG891z7lW3NWN8xNqyWZprk7zoMSWIJpAS7ypwUpKVRGRSpZB2+hJTowhkimB9YuDWZpbIrAw1VA+CDr5kXYooqjGqinFlkvioqjGuqv9sIRjGOMYdgYAH/PXR/ksgWNPSRokaDJ9LGoVRk+zgAZJ/ev/2Q=="
                       alt=""
                     />
@@ -427,10 +386,8 @@ function Club(props) {
                       <img
                         width="700"
                         height="515"
-                        data-main-image=""
                         style={{ objectFit: "cover", opacity: "0" }}
                         sizes="(min-width: 696px) 696px, 100vw"
-                        decoding="async"
                         loading="lazy"
                         src="https://images.ctfassets.net/royi30b2qd26/38RUEI941x4Cl2hvDdDWpZ/702005dc021704a553556ceea7e8b202/costa-club-rockettrain-gradient-696x512.jpg?w=696&amp;h=512&amp;fl=progressive&amp;q=100&amp;fm=jpg"
                         srcSet="
@@ -445,13 +402,9 @@ function Club(props) {
                 </div>
               </div>
             </article>
-            <article
-              id="how-to-guides"
-              className="teaser__Block-sc-18o2m9g-0 eiIDKF"
-            >
-              <div className="teaser__ImageWrapper-sc-18o2m9g-1 dHmxpK">
+            <article id="how-to-guides" className="eiIDKF">
+              <div className="dHmxpK">
                 <div
-                  data-image_container=""
                   className="image_container image_container-constrained"
                   style={{ height: "100%" }}
                 >
@@ -459,7 +412,6 @@ function Club(props) {
                     <img
                       alt=""
                       role="presentation"
-                      aria-hidden="true"
                       src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='504'%20width='700'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                       style={{
                         maxHidth: "100%",
@@ -469,14 +421,11 @@ function Club(props) {
                     />
                   </div>
                   <img
-                    aria-hidden="true"
-                    data-placeholder-image=""
                     style={{
                       opacity: "1",
                       transition: "opacity 500ms linear",
                       objectFit: "cover",
                     }}
-                    decoding="async"
                     src="data:image/webp;base64,UklGRkADAABXRUJQVlA4TDQDAAAvE0ADAJcHt7Zt1cre13D3nEFIx7RCA/SgGek3uLY3VgQcybZVK+uc++R/3F3nzkxIyV1Ciui7XduQI0lSJEX1MvNz93UkwWl38t3/VGBm6J6prpx/tW3bMG6bndxRY6nYowpUDJyzgYzkOsIiLoKaWEZmZs1UEjSZc0sKX+swc6KFm11Ro0Psod6sa+JkREtu6qbFjF5a06u5aYxxVRvX/pBnX46s731VKDhk14fCQ9Rrx+bN0bxVy4/Ar61Hx34Aq6F28m+HL2q/nXYTO91ecbPdVZm15XpJdH1Oiz7qKnUnbk+t6WsEWIdkLABjBQNLIDGwxAAIBAMgFoAYWGIEggEEIxCM/H3xl0b+nrDEEkss+d8DYsESAwhA9i+uXfVhMBPtyIh9wOQYsDVCQzADTDADMwQEwNBAAAwBLaGBGJohgCFYQgNBFOwJDdFM8o7oAjrKGqV1HE6lvjrd7UHp268rT/9X5jxMN8Mboc2C/gVELTZyfbF28Nq1HF56tDsL/8b2SY8SP37ddMhl7Pm3GunHx/eX++ZcWg55MbMdq5L76B0xD1lj3ISxDihBiBQgWGJkSkQVhknqqnX+NZamNz/SPlZkuQu37ZncdNgnFBwbaFe2htDxn7qTrFc/vibu/OUgLCTWDqekW2PPppIbOA62x3DT6gZuip2jqS2GuMTdU/bwfMEBSQAAAk2abdu2bTbbtm3bZs22bdu27S+0R3SM6H8ZIpERoUEBPl5uDlamhjpa6onJqemR4SGB/j6eLvaWJvEtNeVJKakZWWHBgX7eHs525sZ6bQqKtdlpmTl5wQG+Xu5ONmZGutrdsp1dCZnI/ELEcLRGDDWVmCge5dz8ohIfT9f/vzVaTFRCpr2guLTC08XOwsQAqhk7MCglyM/X11FWCXO2NTfRh2qoivQPiY+O8cpLNsPg9XE9ShyX7Jwnn2wCI3/DQtK/8GpAYwPr/uzx8svbz/fX5MS4sFxVHQEhxcHc/PrT8+v76cfZLSN+EwSdlPpqZmdj5eFx+/D8YvqaiggNCKJkntrdWlu6v+O66SVhoqMnw0UF03Af7W2uLi6wkGNjYaJgMNAS4+EA"
                     alt=""
                   />
@@ -492,17 +441,15 @@ function Club(props) {
                     <img
                       width="700"
                       height="504"
-                      data-main-image=""
                       style={{ objectFit: "cover", opacity: "0" }}
-                      decoding="async"
                       loading="lazy"
                       alt="Carlstons Club How to Guides"
                     />
                   </picture>
                 </div>
               </div>
-              <div className="teaser__Content-sc-18o2m9g-2 bfzeFG">
-                <div className="teaser__RichText-sc-18o2m9g-4 iYOBBt">
+              <div className="bfzeFG">
+                <div className="iYOBBt">
                   <h4>How to guides to help get you going</h4>
                   <p>
                     Getting started with our Carlstons Club is as easy as one,
@@ -510,9 +457,9 @@ function Club(props) {
                     to get the most from Carlstons Club.
                   </p>
                 </div>
-                <ul className="teaser__LinkCtaList-sc-18o2m9g-3 dNSNqv">
+                <ul className="dNSNqv">
                   <li>
-                    <div className="linkCta__StyledLinkCta-sc-1bq328k-0 jwGbBy linkCta">
+                    <div className="jwGbBy linkCta">
                       <a href="/carlstons-club/how-to-guides">Learn how</a>
                     </div>
                   </li>
@@ -521,10 +468,10 @@ function Club(props) {
             </article>
             {/* <article
               id="app-promo"
-              className="promoAppButtons__Block-sc-1x241nn-3 fbmffN"
+              className="fbmffN"
             >
-              <div className="promoAppButtons__Content-sc-1x241nn-9 byNeYN">
-                <div className="promoAppButtons__RichText-sc-1x241nn-8 hRutP">
+              <div className="byNeYN">
+                <div className="hRutP">
                   <h3>The app is where it's at</h3>
                   <p>
                     Use our app to keep track of your beans, or ask your barista
@@ -532,38 +479,38 @@ function Club(props) {
                     best Carlstons Club experience.
                   </p>
                 </div>
-                <ul className="promoAppButtons__List-sc-1x241nn-0 enhTis">
-                  <li className="promoAppButtons__ListItem-sc-1x241nn-2 bIrHbT">
+                <ul className="enhTis">
+                  <li className="bIrHbT">
                     <a
                       href="https://apps.apple.com/app/id578627826"
-                      target="_blank"
-                      className="promoAppButtons__Link-sc-1x241nn-1 hucpiK"
+                   
+                      className="hucpiK"
                     >
                       <img
                         src="//images.ctfassets.net/royi30b2qd26/6eYanDnLtkVbCiZnjOc8aY/5eff88f78a85eefe8535d8940d7c401e/apple-cta-mobile_3x.png"
                         alt="IOS"
-                        className="promoAppButtons__ButtonImage-sc-1x241nn-4 hYcCuN"
+                        className="hYcCuN"
                       />
                     </a>
                   </li>
                   <li className="promoAppButtons__ListItem-sc-1x241nn-2 bIrHbT">
                     <a
                       href="https://play.google.com/store/apps/details?id=uk.co.club.costa.costa"
-                      target="_blank"
-                      className="promoAppButtons__Link-sc-1x241nn-1 hucpiK"
+                   
+                      className="hucpiK"
                     >
                       <img
                         src="//images.ctfassets.net/royi30b2qd26/JLx2EQieRalp2GUzG9W5h/1b3380a59dc7eb61414660ac9cb85ddc/google-cta-mobile_3x.png"
                         alt="Android"
-                        className="promoAppButtons__ButtonImage-sc-1x241nn-4 hYcCuN"
+                        className="hYcCuN"
                       />
                     </a>
                   </li>
                 </ul>
               </div>
-              <div className="promoAppButtons__ImageWrapper-sc-1x241nn-5 gVWkJc">
+              <div className="gVWkJc">
                 <div
-                  data-image_container=""
+             
                   className="image_container image_container-constrained"
                   style={{ height: "100%" }}
                 >
@@ -571,7 +518,7 @@ function Club(props) {
                     <img
                       alt=""
                       role="presentation"
-                      aria-hidden="true"
+                    
                       src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='515'%20width='700'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                       style={{
                         maxHidth: "100%",
@@ -581,14 +528,14 @@ function Club(props) {
                     />
                   </div>
                   <img
-                    aria-hidden="true"
-                    data-placeholder-image=""
+                  
+                
                     style={{
                       opacity: "1",
                       transition: "opacity 500ms linear",
                       objectFit: "cover",
                     }}
-                    decoding="async"
+                
                     src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubwIQAABtbnRyUkdCIFhZWiAHzgACAAkABgAxAABhY3NwTVNGVAAAAABJRUMgc1JHQgAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLUhQICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFjcHJ0AAABUAAAADNkZXNjAAABhAAAAGx3dHB0AAAB8AAAABRia3B0AAACBAAAABRyWFlaAAACGAAAABRnWFlaAAACLAAAABRiWFlaAAACQAAAABRkbW5kAAACVAAAAHBkbWRkAAACxAAAAIh2dWVkAAADTAAAAIZ2aWV3AAAD1AAAACRsdW1pAAAD+AAAABRtZWFzAAAEDAAAACR0ZWNoAAAEMAAAAAxyVFJDAAAEPAAACAxnVFJDAAAEPAAACAxiVFJDAAAEPAAACAx0ZXh0AAAAAENvcHlyaWdodCAoYykgMTk5OCBIZXdsZXR0LVBhY2thcmQgQ29tcGFueQAAZGVzYwAAAAAAAAASc1JHQiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAABJzUkdCIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWFlaIAAAAAAAAPNRAAEAAAABFsxYWVogAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z2Rlc2MAAAAAAAAAFklFQyBodHRwOi8vd3d3LmllYy5jaAAAAAAAAAAAAAAAFklFQyBodHRwOi8vd3d3LmllYy5jaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAAAC5JRUMgNjE5NjYtMi4xIERlZmF1bHQgUkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAC5JRUMgNjE5NjYtMi4xIERlZmF1bHQgUkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZGVzYwAAAAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcgQ29uZGl0aW9uIGluIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAALFJlZmVyZW5jZSBWaWV3aW5nIENvbmRpdGlvbiBpbiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHZpZXcAAAAAABOk/gAUXy4AEM8UAAPtzAAEEwsAA1yeAAAAAVhZWiAAAAAAAEwJVgBQAAAAVx/nbWVhcwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAo8AAAACc2lnIAAAAABDUlQgY3VydgAAAAAAAAQAAAAABQAKAA8AFAAZAB4AIwAoAC0AMgA3ADsAQABFAEoATwBUAFkAXgBjAGgAbQByAHcAfACBAIYAiwCQAJUAmgCfAKQAqQCuALIAtwC8AMEAxgDLANAA1QDbAOAA5QDrAPAA9gD7AQEBBwENARMBGQEfASUBKwEyATgBPgFFAUwBUgFZAWABZwFuAXUBfAGDAYsBkgGaAaEBqQGxAbkBwQHJAdEB2QHhAekB8gH6AgMCDAIUAh0CJgIvAjgCQQJLAlQCXQJnAnECegKEAo4CmAKiAqwCtgLBAssC1QLgAusC9QMAAwsDFgMhAy0DOANDA08DWgNmA3IDfgOKA5YDogOuA7oDxwPTA+AD7AP5BAYEEwQgBC0EOwRIBFUEYwRxBH4EjASaBKgEtgTEBNME4QTwBP4FDQUcBSsFOgVJBVgFZwV3BYYFlgWmBbUFxQXVBeUF9gYGBhYGJwY3BkgGWQZqBnsGjAadBq8GwAbRBuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H0gflB/gICwgfCDIIRghaCG4IggiWCKoIvgjSCOcI+wkQCSUJOglPCWQJeQmPCaQJugnPCeUJ+woRCicKPQpUCmoKgQqYCq4KxQrcCvMLCwsiCzkLUQtpC4ALmAuwC8gL4Qv5DBIMKgxDDFwMdQyODKcMwAzZDPMNDQ0mDUANWg10DY4NqQ3DDd4N+A4TDi4OSQ5kDn8Omw62DtIO7g8JDyUPQQ9eD3oPlg+zD88P7BAJECYQQxBhEH4QmxC5ENcQ9RETETERTxFtEYwRqhHJEegSBxImEkUSZBKEEqMSwxLjEwMTIxNDE2MTgxOkE8UT5RQGFCcUSRRqFIsUrRTOFPAVEhU0FVYVeBWbFb0V4BYDFiYWSRZsFo8WshbWFvoXHRdBF2UXiReuF9IX9xgbGEAYZRiKGK8Y1Rj6GSAZRRlrGZEZtxndGgQaKhpRGncanhrFGuwbFBs7G2MbihuyG9ocAhwqHFIcexyjHMwc9R0eHUcdcB2ZHcMd7B4WHkAeah6UHr4e6R8THz4faR+UH78f6iAVIEEgbCCYIMQg8CEcIUghdSGhIc4h+yInIlUigiKvIt0jCiM4I2YjlCPCI/AkHyRNJHwkqyTaJQklOCVoJZclxyX3JicmVyaHJrcm6CcYJ0kneierJ9woDSg/KHEooijUKQYpOClrKZ0p0CoCKjUqaCqbKs8rAis2K2krnSvRLAUsOSxuLKIs1y0MLUEtdi2rLeEuFi5MLoIuty7uLyQvWi+RL8cv/jA1MGwwpDDbMRIxSjGCMbox8jIqMmMymzLUMw0zRjN/M7gz8TQrNGU0njTYNRM1TTWHNcI1/TY3NnI2rjbpNyQ3YDecN9c4FDhQOIw4yDkFOUI5fzm8Ofk6Njp0OrI67zstO2s7qjvoPCc8ZTykPOM9Ij1hPaE94D4gPmA+oD7gPyE/YT+iP+JAI0BkQKZA50EpQWpBrEHuQjBCckK1QvdDOkN9Q8BEA0RHRIpEzkUSRVVFmkXeRiJGZ0arRvBHNUd7R8BIBUhLSJFI10kdSWNJqUnwSjdKfUrESwxLU0uaS+JMKkxyTLpNAk1KTZNN3E4lTm5Ot08AT0lPk0/dUCdQcVC7UQZRUFGbUeZSMVJ8UsdTE1NfU6pT9lRCVI9U21UoVXVVwlYPVlxWqVb3V0RXklfgWC9YfVjLWRpZaVm4WgdaVlqmWvVbRVuVW+VcNVyGXNZdJ114XcleGl5sXr1fD19hX7NgBWBXYKpg/GFPYaJh9WJJYpxi8GNDY5dj62RAZJRk6WU9ZZJl52Y9ZpJm6Gc9Z5Nn6Wg/aJZo7GlDaZpp8WpIap9q92tPa6dr/2xXbK9tCG1gbbluEm5rbsRvHm94b9FwK3CGcOBxOnGVcfByS3KmcwFzXXO4dBR0cHTMdSh1hXXhdj52m3b4d1Z3s3gReG54zHkqeYl553pGeqV7BHtje8J8IXyBfOF9QX2hfgF+Yn7CfyN/hH/lgEeAqIEKgWuBzYIwgpKC9INXg7qEHYSAhOOFR4Wrhg6GcobXhzuHn4gEiGmIzokziZmJ/opkisqLMIuWi/yMY4zKjTGNmI3/jmaOzo82j56QBpBukNaRP5GokhGSepLjk02TtpQglIqU9JVflcmWNJaflwqXdZfgmEyYuJkkmZCZ/JpomtWbQpuvnByciZz3nWSd0p5Anq6fHZ+Ln/qgaaDYoUehtqImopajBqN2o+akVqTHpTilqaYapoum/adup+CoUqjEqTepqaocqo+rAqt1q+msXKzQrUStuK4trqGvFq+LsACwdbDqsWCx1rJLssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm40blKucK6O7q1uy67p7whvJu9Fb2Pvgq+hL7/v3q/9cBwwOzBZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPHQce/yD3IvMk6ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI/0sHTRNPG1EnUy9VO1dHWVdbY11zX4Nhk2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM4lPi2+Nj4+vkc+T85YTmDeaW5x/nqegy6LzpRunQ6lvq5etw6/vshu0R7ZzuKO6070DvzPBY8OXxcvH/8ozzGfOn9DT0wvVQ9d72bfb794r4Gfio+Tj5x/pX+uf7d/wH/Jj9Kf26/kv+3P9t////2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAPABQDAREAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABwgJC//EACEQAAIDAAMAAgMBAAAAAAAAAAMEAgUGAQcIERQACRUT/8QAGAEAAwEBAAAAAAAAAAAAAAAABAUHBgj/xAAlEQADAQACAgIBBAMAAAAAAAABAgMEBRESEwAGIRQVMUEiI1H/2gAMAwEAAhEDEQA/AKm92eHuyLPyTtb3C9uWWJ39nX0OlqmSr2dY/wBciy+pqdKxdDWzajWiK/R5sulIitUSBb2bo+ETLkMccYxr679e41frPB5Nz0X25cLana3ovm0SSfrYTtN1j4M3RHc/T6ywUt310Lr+45NfNtiHEpFZ2vk/XZGfTbVOy1m4AreeYztRYK4dHQyNOnA6+SQ9B+Vv2r4alb7G6NZ0fd+GzomI6Si7kocnoOzbgtegON5eUlVWi16mtrZ6fizR+9Uv/wBwCBaexuMnXgsIMFN5T6Vw2OtnnnrD/XodrxnS2quvNq0ZtEdPTrQ2S2ZlbyALeaVAEaTdk0/uqajlbi+QhyXH6P0ggGpbNlTNfDk1Z9Oaurj8qWhpza46U05p1wF/fjjprbFqnFTe2u5vQ/VuoRzLfmAOvcNkMXeWdynhfOJIcaC6zNY5rKqcIQrSAlRa2V7ShG0pFqaiCzJCs8HgyVBDgMuxPdl5TOJ9+BQ1q7TdVXyRmCsO/wAgjpj0hUd99/HujmtuBkjo4rkizTWqPOISdZuW8aIpdCASGUnr8urH+/mgM7m0TqWNQZAbKdgswm2ByCpVTrMimAwTL8xmMwSiJOBREhzGcJcx54+OfyiaMC2zXzADqk2Tsheu2B/kfnsfkdj+wSD/AB8j2Te+TXl1gkPCyVXxJ8v8T2SGBHTdA9Hv8Hr4nHQFfpC67seh0GtvbK9681VkkPjS29vp42GRt1lVso7TynYgQzlYWspFf6mbiFx9jV11lrXH4n0bCkVXA83s5LLfjdLKdHEaFz1pUvZ7IqNPPdWBRUas1b3r5VetU91GHkk57L7tlhm/a9mPPlhg5XDPRGeTLDJ6NSszbZV8VNNDClu53YTRc7SyzTwzB2I+08z+dtjesXus6T6j1NyzxLk9roetsnbPy/0YOzMXDT9SyxwD7LDB4jkWXwU5ic8yISc5Ew4njs/tC5Yd1vS9CISUGj9AnoL/AMUAdknoDsn5l781y+j0+e/URDPHNMHTc+Mor4oo7c9dfk9Dodk9AD8fP//Z"
                     alt=""
                   />
@@ -605,10 +552,10 @@ function Club(props) {
                     <img
                       width="700"
                       height="515"
-                      data-main-image=""
+                  
                       style={{ objectFit: "cover", opacity: "0" }}
                       sizes="(min-width: 696px) 696px, 100vw"
-                      decoding="async"
+                  
                       loading="lazy"
                       src="https://images.ctfassets.net/royi30b2qd26/1tZcH146I4IzcGORgRh1TT/5887b58aa00e0481f25f1b65f940f0d2/App_Screen_Lifestyle_Free_Drink_June23.jpg?w=696&amp;h=512&amp;fl=progressive&amp;q=100&amp;fm=jpg"
                       srcSet="
@@ -622,13 +569,9 @@ function Club(props) {
                 </div>
               </div>
             </article> */}
-            <article
-              id="card-registration"
-              className="teaser__Block-sc-18o2m9g-0 dXbAhM"
-            >
-              <div className="teaser__ImageWrapper-sc-18o2m9g-1 bEldKG">
+            <article id="card-registration" className="dXbAhM">
+              <div className="bEldKG">
                 <div
-                  data-image_container=""
                   className="image_container image_container-constrained"
                   style={{ height: "100%" }}
                 >
@@ -636,7 +579,6 @@ function Club(props) {
                     <img
                       alt=""
                       role="presentation"
-                      aria-hidden="true"
                       src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='504'%20width='700'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                       style={{
                         maxHidth: "100%",
@@ -646,14 +588,11 @@ function Club(props) {
                     />
                   </div>
                   <img
-                    aria-hidden="true"
-                    data-placeholder-image=""
                     style={{
                       opacity: "1",
                       transition: "opacity 500ms linear",
                       objectFit: "cover",
                     }}
-                    decoding="async"
                     src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAOABQDAREAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAACQcI/8QAHxAAAgIDAQEBAQEAAAAAAAAAAwQFBgECBwgUCRMR/8QAGQEBAAIDAAAAAAAAAAAAAAAABwEFAwQG/8QAJhEAAgICAgEDBAMAAAAAAAAAAgMBBAUSBhETAAcUISIjJDIzQf/aAAwDAQACEQMRAD8AnXpX87aND0akWigdQpklzeMbmXYGatjclreoitMrA3FTsQtcqFkP1GFTNlCWqdlGzEkymuSDzWWTySbzBByjjjOEX7eXqkxuO5A5C/iAwS1uL8xlaBpvWlfkQYpsmkScxpqYz+HcuXtXzZPutVq4W5V8Wd45Uedqx8eFqOsUpSsWKaJODR6zNSHBKPGBePUd1xmfrHj6l2l3OaBRf5NEgo7fUe8ZNw9WknwCEuZKko3SQjpiYjjMYNICIWHwExzHJG5ImRPO5jS5dnaF5qLp1202WGFXlFiXXk04XEjZypRUCuhrD7WAItNPTWGQOpl6esl7f8es1SfEAuyACJpDdiwONugWtRT0Ez9YFqx6L/In7YNaz+LLElIa7WeSpFAk3NGWMVS3yDVUsscmGTkI5M0rByVdXIntJhRxKofw3bASKeQJuxo3s0mqmK5RGg+JNyyuQWYWEp86GwxYN7Q5bThiwk5URFoXlWyNZGBMgHIcfWu9bSNdfSHsT/bWWX2FMRJLdKyCSjo4GIKIAh7LfYRfHgfM6v7I6iiDx5vb/LK/Jxq5swsXEIKxLKyUkqdgUdzbFVvVVelGMj/1SdeNF4iDmaO1D2UJvi0qMyGXfWThbVxd6rccJJr3W3zXXsRBrGwD69mu1cD5Z3SAdtj6C9ExtPXYicXxa2WcimtF2KlxLreNo40LNimyajW1XTYRMN7KuuUtIvwzv+NkF1Feqv5bXPjkjYhdJ74HuUdMzMvZGa1OQVuqwEVlZkcwgyvOVy/gSan4lUfyxjQKTDKptkw8iJDC4FsVPISp1W0Tr01VrSF16jSStZjKtIGzCnOE7UQ85E5FjDmdOmGwi3Hew/KsnYo2UnYsN2tZW6q21wy5nyJSVCvYqwr4YKorSwP1xAT80aKWChAj39Ecb7qLqExvzCS51VKWcISxFfk7b0tk8ZpgrICCGSJSjFsBLuH6NRbCOUO5iC+swtBY0wY+3hVraq/WsPcp5BDgr0WSxfjUUE0rGxyyCIxme5ghECnoiKIluez8wk12a5eRMEUNW0NCg2BquKzEhK9REokgg4IiGZkRGfX/2Q=="
                     alt=""
                   />
@@ -670,10 +609,8 @@ function Club(props) {
                     <img
                       width="700"
                       height="504"
-                      data-main-image=""
                       style={{ objectFit: "cover", opacity: "0" }}
                       sizes="(min-width: 389px) 389px, 100vw"
-                      decoding="async"
                       loading="lazy"
                       src="https://images.ctfassets.net/royi30b2qd26/7FUj1ZNp1SNKmLSJZ7qLCy/645a5f1d87d35f57787364f491dad307/costa-club-card-389x280.jpg?w=389&amp;h=280&amp;fl=progressive&amp;q=100&amp;fm=jpg"
                       srcSet="
@@ -686,8 +623,8 @@ function Club(props) {
                   </picture>
                 </div>
               </div>
-              <div className="teaser__Content-sc-18o2m9g-2 bfzeFG">
-                <div className="teaser__RichText-sc-18o2m9g-4 iYOBBt">
+              <div className="bfzeFG">
+                <div className="iYOBBt">
                   <h4>
                     {/* <a
                       href="#"
@@ -704,14 +641,10 @@ function Club(props) {
                     to join.
                   </p>
                 </div>
-                <ul className="teaser__LinkCtaList-sc-18o2m9g-3 dNSNqv">
+                <ul className="dNSNqv">
                   <li>
-                    <div className="linkCta__StyledLinkCta-sc-1bq328k-0 jwGbBy linkCta">
-                      <a
-                        href="/carlstons-club/register/"
-                        target="_self"
-                        rel="noreferrer"
-                      >
+                    <div className="jwGbBy linkCta">
+                      <a href="/carlstons-club/register/">
                         Join the Carlstons Club
                       </a>
                     </div>
@@ -719,10 +652,9 @@ function Club(props) {
                 </ul>
               </div>
             </article>
-            <article id="faqs" className="teaser__Block-sc-18o2m9g-0 eiIDKF">
-              <div className="teaser__ImageWrapper-sc-18o2m9g-1 dHmxpK">
+            <article id="faqs" className="eiIDKF">
+              <div className="dHmxpK">
                 <div
-                  
                   className="image_container image_container-constrained"
                   style={{ height: "100%" }}
                 >
@@ -738,13 +670,11 @@ function Club(props) {
                     />
                   </div>
                   <img
-                
                     style={{
                       opacity: "1",
                       transition: "opacity 500ms linear",
                       objectFit: "cover",
                     }}
-                  
                     src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAOABQDAREAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAACAkH/8QAJBAAAgICAgEEAwEAAAAAAAAABAUDBgECBxEIABUhURQxYdH/xAAYAQADAQEAAAAAAAAAAAAAAAAFBggEB//EACgRAAICAQMDAwQDAAAAAAAAAAECAwQFBhESEyExAAdRCBRBYRUiM//aAAwDAQACEQMRAD8ATKGqvKo8Xh8iHcdrRLYslsVF2UW3c1mWnHK0EMDfjmgBrBrCu2nF2ZL0bh57dgqCFpqtL31F9a9Le5keYyOex2cp1dNSYq9LDW/kMlXhks12t2YKnUinMRFqSGATzRwtJHH1FQOQyO9i5jT8dOlSt465LkhacwmOOnKJDLXrV5bk0QXnvSSawkNad+DWQryIoCOFdd55/wCAuHIuL6VP43N7uOyqKaZxdg7ADXVUNhZERwm7NrhEuKYblCGESdwb4wtiiwLBEFrFILBtPFv6lrSZLV7w4DLzVtN6tyOm4ZhdRcdeFS8a1W3EDWaWOG1A9axweCVkE4QswUuVevoDUORuxImpYaVu5YcwY3ovZnSMf5qtYTdB1bYqAH57huTFt9tBBpsm4+u2Is4+c46676/Xx31jvr7xjr69WKbKHiQeQKgggjuD4Pn49K8tvi5BJ3Hn9H8g7g7d/wAbnb59QQ8uuUOVR7BwJ43KrSQkuHGw93tKvkGaQCxLbJU522R1Y7+t7IK/ALZt170PLYgDeYWc6dxNmcnESX8Kdst7fYyt93UJaSnTVxAjOwlWtbsRtGrSRiLlIhVWPYf3MpLuZWJLXNeZPD5y1NBBC01haluV2PJDJDDIgURSxyhUc2CpHIhFVWjUMoHpc+L1VY+aLajXho+3qUPj65FovJ9FkFnsNev9iWTlPdmyhnKxXFe1u17jSEwawKSDAZtZICJrFjXLEhFxX080JdR3M/T1A0WmsjqTDais6XtYsWwj41KDWMeLkuQZLNXIvUJeSeqrV45+kYrLV0lkKUPdVrGJnc4podQCbIEZeraFboWLyqVnrpFCJI3rygzxsjxv1C3Fo+RY3dFRBQQaR5j12zjHznrH1/f8x6qvc+B2A2AC9gABsAAOw28ADsB47euXPPI7Fix3Pn5PyT+ye59f/9k="
                     alt=""
                   />
@@ -754,17 +684,15 @@ function Club(props) {
                       srcSet="
                             https://images.ctfassets.net/royi30b2qd26/eP2VBxlFvogoj8MpDfurf/78db42bb15c46867e8edf66ca1e3a3d7/costa-club-boosterthefreeone-389x280.jpg?w=97&amp;h=70&amp;q=100&amp;fm=webp    97w,
                             https://images.ctfassets.net/royi30b2qd26/eP2VBxlFvogoj8MpDfurf/78db42bb15c46867e8edf66ca1e3a3d7/costa-club-boosterthefreeone-389x280.jpg?w=195&amp;h=140&amp;q=100&amp;fm=webp 195w,
-                            https://images.ctfassets.net/royi30b2qd26/eP2VBxlFvogoj8MpDfurf/78db42bb15c46867e8edf66ca1e3a3d7/costa-club-boosterthefreeone-389x280.jpg?w=389&amp;h=280&amp;q=100&amp;fm=webp 389w
+                             https://images.ctfassets.net/royi30b2qd26/eP2VBxlFvogoj8MpDfurf/78db42bb15c46867e8edf66ca1e3a3d7/costa-club-boosterthefreeone-389x280.jpg?w=389&amp;h=280&amp;q=100&amp;fm=webp 389w
                         "
                       sizes="(min-width: 389px) 389px, 100vw"
                     />
                     <img
                       width="700"
                       height="504"
-                      data-main-image=""
                       style={{ objectFit: "cover", opacity: "0" }}
                       sizes="(min-width: 389px) 389px, 100vw"
-                      decoding="async"
                       loading="lazy"
                       src="https://images.ctfassets.net/royi30b2qd26/eP2VBxlFvogoj8MpDfurf/78db42bb15c46867e8edf66ca1e3a3d7/costa-club-boosterthefreeone-389x280.jpg?w=389&amp;h=280&amp;fl=progressive&amp;q=100&amp;fm=jpg"
                       srcSet="
@@ -777,8 +705,8 @@ function Club(props) {
                   </picture>
                 </div>
               </div>
-              <div className="teaser__Content-sc-18o2m9g-2 bfzeFG">
-                <div className="teaser__RichText-sc-18o2m9g-4 iYOBBt">
+              <div className="bfzeFG">
+                <div className="iYOBBt">
                   <h4>Want to know more?</h4>
                   <p>
                     Got a question for us? Here you’ll find the answers to some
@@ -786,38 +714,30 @@ function Club(props) {
                     Carlstons Club.
                   </p>
                 </div>
-                <ul className="teaser__LinkCtaList-sc-18o2m9g-3 dNSNqv">
+                <ul className="dNSNqv">
                   <li>
-                    <div className="linkCta__StyledLinkCta-sc-1bq328k-0 jwGbBy linkCta">
+                    <div className="jwGbBy linkCta">
                       <a href="/faqs">Ask away</a>
                     </div>
                   </li>
                 </ul>
               </div>
             </article>
-            <article className="richText__Container-sc-1njp8jq-0 iIYSRA">
-              <div className="richText__Content-sc-1njp8jq-1 eIYIPq">
+            <article className="iIYSRA">
+              <div className="eIYIPq">
                 <p></p>
               </div>
             </article>
-            <article className="richText__Container-sc-1njp8jq-0 iIYSRA">
-              <div className="richText__Content-sc-1njp8jq-1 eIYIPq">
+            <article className="iIYSRA">
+              <div className="eIYIPq">
                 <p>
                   *
-                  <a
-                    href="https://www.costa.co.uk/costa-club/terms-of-use"
-                    target="_self"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://www.costa.co.uk/costa-club/terms-of-use">
                     See here
                   </a>{" "}
                   for full Carlstons Club membership terms and conditions. For
                   full information on birthday rewards,
-                  <a
-                    href="https://www.costa.co.uk/costa-club/terms-of-use#birthday"
-                    target="_self"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://www.costa.co.uk/costa-club/terms-of-use#birthday">
                     see here
                   </a>
                   .
@@ -841,7 +761,7 @@ function Club(props) {
       case "account":
         return <AccountPage userId={userId} />;
       default:
-        return <div>404 Page Not Found</div>;
+        return <ErrorPage />;
     }
   }
 

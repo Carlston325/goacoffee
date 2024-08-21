@@ -76,14 +76,11 @@ function Register() {
 
   return (
     <>
-      <main
-        className="layout__Main-sc-78ulcb-0 epUgWD"
-        style={{ minHeight: "400px" }}
-      >
+      <main className="epUgWD" style={{ minHeight: "400px" }}>
         <div className="flex flex-col items-center mb-12 mx-auto max-w-[600px] px-5 text-center">
           <h1
             id="introTitle"
-            className="mb-5  leading-[40px] title darkFont"
+            className="mb-5 leading-[40px] title darkFont"
             style={{ lineHeight: "100px" }}
           >
             Register
