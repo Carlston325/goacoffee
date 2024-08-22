@@ -1,10 +1,13 @@
 {
+  "homepage": "https://Carlston325.github.io/carlstons-coffee",
   "name": "carlstons_coffee",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon server.js",
     "client": "npm start --prefix client"
