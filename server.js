@@ -15,12 +15,14 @@ const PSQL_database = process.env.PSQL_database;
 const PSQL_password = process.env.PSQL_password;
 const PSQL_port = process.env.PSQL_port;
 
+console.log({ PSQL_user, PSQL_host, PSQL_database, PSQL_password, PSQL_port });
+
 const db = new pg.Client({
   user: PSQL_user,
   host: PSQL_host,
   database: PSQL_database,
   password: PSQL_password,
-  port: PSQL_port,
+  port: parseInt(PSQL_port, 10),
 });
 db.connect().catch((err) => {
   console.error("Failed to connect to the database:", err.message);
