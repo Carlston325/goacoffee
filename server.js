@@ -3,15 +3,24 @@ import bcrypt from "bcrypt";
 import cors from "cors";
 import axios from "axios";
 import pg from "pg";
+import dotenv from "dotenv";
 const app = express();
 const port = process.env.PORT || 5000;
 
+dotenv.config();
+
+const PSQL_user = process.env.PSQL_user;
+const PSQL_host = process.env.PSQL_host;
+const PSQL_database = process.env.PSQL_database;
+const PSQL_password = process.env.PSQL_password;
+const PSQL_port = process.env.PSQL_port;
+
 const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "Users",
-  password: "CarlstonRebelo_0325",
-  port: 5432,
+  user: PSQL_user,
+  host: PSQL_host,
+  database: PSQL_database,
+  password: PSQL_password,
+  port: PSQL_port,
 });
 db.connect().catch((err) => {
   console.error("Failed to connect to the database:", err.message);
@@ -52,6 +61,10 @@ app.post("/login", async (req, res) => {
 });
 
 // Get User Data
+app.get("/", (req, res) => {
+  res.send("Hi");
+  console.log(PSQL_port);
+});
 app.get("/user/:id", async (req, res) => {
   const userId = req.params.id;
 
