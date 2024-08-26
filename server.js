@@ -13,10 +13,7 @@ const PSQL_user = process.env.PSQL_user;
 const PSQL_host = process.env.PSQL_host;
 const PSQL_database = process.env.PSQL_database;
 const PSQL_password = process.env.PSQL_password;
-const myPgPort = process.env.PSQL_port;
-
-const PSQL_port = parseInt(myPgPort, 10);
-console.log({ PSQL_user, PSQL_host, PSQL_database, PSQL_password, PSQL_port });
+const PSQL_port = parseInt(process.env.PSQL_port, 10);
 
 const db = new pg.Client({
   user: PSQL_user,
