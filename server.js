@@ -13,8 +13,9 @@ const PSQL_user = process.env.PSQL_user;
 const PSQL_host = process.env.PSQL_host;
 const PSQL_database = process.env.PSQL_database;
 const PSQL_password = process.env.PSQL_password;
-const PSQL_port = process.env.PSQL_port;
+const myPgPort = process.env.PSQL_port;
 
+const PSQL_port = parseInt(myPgPort, 10);
 console.log({ PSQL_user, PSQL_host, PSQL_database, PSQL_password, PSQL_port });
 
 const db = new pg.Client({
@@ -22,7 +23,7 @@ const db = new pg.Client({
   host: PSQL_host,
   database: PSQL_database,
   password: PSQL_password,
-  port: parseInt(PSQL_port, 10),
+  port: PSQL_port,
 });
 db.connect().catch((err) => {
   console.error("Failed to connect to the database:", err.stack);
