@@ -23,7 +23,10 @@ const db = new pg.Client({
   port: PSQL_port,
 });
 db.connect().catch((err) => {
-  console.error("Failed to connect to the database:", err.stack);
+  console.error(
+    "Failed to connect to the database. Check your connection settings and database status."
+  );
+  console.error(err);
   process.exit(1);
 });
 
