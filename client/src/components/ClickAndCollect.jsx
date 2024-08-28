@@ -205,8 +205,10 @@ function ClickAndCollect() {
               Members to pre-order and pay for selected food and drinks
               from&nbsp; participating Carlstons outlets &nbsp;before picking
               their order up at the relevant participating outlet. See
-              <a href="/costa-club/terms-of-use">terms and conditions</a> for
-              more information.
+              <a href="/carlstons-coffee/costa-club/terms-of-use">
+                terms and conditions
+              </a>{" "}
+              for more information.
             </p>
           </div>
         </article>

@@ -109,7 +109,8 @@ function SustainClimate() {
               is to work in partnership with the suppliers who source our most
               important and iconic products: coffee beans, milk and food. You
               can find out more about our work with Rainforest Alliance and our
-              milk suppliers <a href="/sustainability/coffee">here</a>.
+              milk suppliers{" "}
+              <a href="/carlstons-coffee/sustainability/coffee">here</a>.
             </p>
           </div>
         </article>
@@ -150,14 +151,17 @@ function SustainClimate() {
             <ul className="gsgHhh">
               <li>
                 <span className="jkcThw linkCta">
-                  <a className="link" href="/sustainability/communities">
+                  <a
+                    className="link"
+                    href="/carlstons-coffee/sustainability/communities"
+                  >
                     Read more
                   </a>
                 </span>
               </li>
               <li>
                 <span className="kuucrm linkCta">
-                  <a className="link" href="/sustainability">
+                  <a className="link" href="/carlstons-coffee/sustainability">
                     Back to Sustainability
                   </a>
                 </span>

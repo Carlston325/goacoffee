@@ -76,7 +76,9 @@ function Delivery() {
             <ul className="dNSNqv">
               <li>
                 <div className="jwGbBy linkCta">
-                  <a href="/locations/store-locator/map">Find a Shop</a>
+                  <a href="/carlstons-coffee/locations/store-locator/map">
+                    Find a Shop
+                  </a>
                 </div>
               </li>
             </ul>

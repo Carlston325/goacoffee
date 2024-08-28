@@ -1,21 +1,21 @@
 function Footer() {
   return (
-    <footer className="lkzBev">
+    <footer className="lkzBev footer">
       <div className="DWIuU">
         <div className="bPiWai">
           <div className="hZZvVz fiveCol">
             <h6 className="cJMtyj">About us</h6>
             <ul className="lfPKDg">
               <li>
-                <a href="/sustainability">Sustainability</a>
+                <a href="/carlstons-coffee/sustainability">Sustainability</a>
               </li>
 
               {/* <li>
-                <a href="/policies-and-reports">Policies and reports</a>
+                <a href="/carlstons-coffee/policies-and-reports">Policies and reports</a>
               </li> */}
 
               <li>
-                <a href="/carlstons-club" target="_self">
+                <a href="/carlstons-coffee/carlstons-club" target="_self">
                   Join Carlston's Club
                 </a>
               </li>
@@ -28,7 +28,7 @@ function Footer() {
             <ul className="lfPKDg">
               <li>
                 <a
-                  href="/sustainability/nutrition#allergen-guides"
+                  href="/carlstons-coffee/sustainability/nutrition#allergen-guides"
                   target="_self"
                 >
                   Nutrition &amp; allergens
@@ -97,7 +97,7 @@ function Footer() {
             <h6 className="cJMtyj">For business</h6>
             <ul className="lfPKDg">
               <li>
-                <a href="/business">Our Business Partners</a>
+                <a href="/carlstons-coffee/business">Our Business Partners</a>
               </li>
             </ul>
           </div> */}
@@ -105,11 +105,11 @@ function Footer() {
             <h6 className="cJMtyj">Contact us</h6>
             <ul className="lfPKDg">
               <li>
-                <a href="/contact">Contact us</a>
+                <a href="/carlstons-coffee/contact">Contact us</a>
               </li>
               {/*  
               <li>
-                <a href="/faqs">FAQs</a>
+                <a href="/carlstons-coffee/faqs">FAQs</a>
               </li>
               <li>
                 <a href="https://costanewsroom.vuelio.co.uk/press/">
@@ -130,13 +130,13 @@ function Footer() {
         <div className="gdDGuL">
           {/* <ul className="kZXzbY">
             <li>
-              <a href="/privacy-policy">Privacy policy</a>
+              <a href="/carlstons-coffee/privacy-policy">Privacy policy</a>
             </li>
             <li>
-              <a href="/cookie-policy">Cookie policy</a>
+              <a href="/carlstons-coffee/cookie-policy">Cookie policy</a>
             </li>
             <li>
-              <a href="/terms-and-conditions">Terms and conditions</a>
+              <a href="/carlstons-coffee/terms-and-conditions">Terms and conditions</a>
             </li>
           </ul> */}
           <p className="gSivZX">© 2024 Carlston's Coffee.</p>

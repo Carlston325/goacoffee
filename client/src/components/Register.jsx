@@ -152,7 +152,7 @@ function Register() {
         <div className="flex align-middle justify-center text-center border-black m-5">
           <a
             id="loginToAccount"
-            href="/carlstons-club/login"
+            href="/carlstons-coffee/carlstons-club/login"
             className="text-[14px] leading-[20px] mt-5 link-underline-dark"
           >
             Already have an account!

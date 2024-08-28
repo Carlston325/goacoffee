@@ -112,7 +112,7 @@ function Hero(props) {
                     <li className="upperLinkCTA">
                       <div className="linkCta prudY">
                         <a
-                          href="/menu"
+                          href="/carlstons-coffee/menu"
                           className="btnLight"
                           style={{ fontSize: "50px", padding: "15px 20px" }}
                         >
@@ -202,7 +202,7 @@ function Hero(props) {
                 <li>
                   <span className=" jkcThw linkCta">
                     <a
-                      href="https://swf3j.app.goo.gl/QbMrq"
+                      href="/carlstons-coffee/carlstons-club/register"
                       className="link btnDark"
                     >
                       Join Carlstons Club
@@ -211,7 +211,10 @@ function Hero(props) {
                 </li>
                 <li>
                   <span className=" kuucrm linkCta">
-                    <a href="/carlstons-club/login/" className="link btnLight">
+                    <a
+                      href="/carlstons-coffee/carlstons-club/login/"
+                      className="link btnLight"
+                    >
                       I'm already a member
                     </a>
                   </span>
@@ -241,7 +244,10 @@ function Hero(props) {
           </div>
           <ul className="irxGhK">
             <li className={param === "delivery" ? linedClass : normalClass}>
-              <a className="link" href="/order-online/delivery">
+              <a
+                className="link"
+                href="/carlstons-coffee/order-online/delivery"
+              >
                 Delivery
               </a>
             </li>
@@ -250,7 +256,10 @@ function Hero(props) {
                 param === "click-and-collect" ? linedClass : normalClass
               }
             >
-              <a className="link" href="/order-online/click-and-collect">
+              <a
+                className="link"
+                href="/carlstons-coffee/order-online/click-and-collect"
+              >
                 Click &amp; Collect
               </a>
             </li>
@@ -277,7 +286,10 @@ function Hero(props) {
           </div>
           <ul className="irxGhK">
             <li className={param === "coffee" ? linedClass : normalClass}>
-              <a className="link" href="/sustainability/coffee">
+              <a
+                className="link"
+                href="/carlstons-coffee/sustainability/coffee"
+              >
                 Coffee
               </a>
             </li>
@@ -286,17 +298,26 @@ function Hero(props) {
                 param === "cups-and-packaging" ? linedClass : normalClass
               }
             >
-              <a className="link" href="/sustainability/cups-and-packaging">
+              <a
+                className="link"
+                href="/carlstons-coffee/sustainability/cups-and-packaging"
+              >
                 Cups and packaging
               </a>
             </li>
             <li className={param === "climate" ? linedClass : normalClass}>
-              <a className="link" href="/sustainability/climate">
+              <a
+                className="link"
+                href="/carlstons-coffee/sustainability/climate"
+              >
                 Climate
               </a>
             </li>
             <li className={param === "communities" ? linedClass : normalClass}>
-              <a className="link" href="/sustainability/communities">
+              <a
+                className="link"
+                href="/carlstons-coffee/sustainability/communities"
+              >
                 Communities
               </a>
             </li>
@@ -318,12 +339,18 @@ function Hero(props) {
           </div>
           <ul className=" irxGhK">
             <li className="kOaOjQ">
-              <a className="link" href="/behind-the-beans/our-story/history">
+              <a
+                className="link"
+                href="/carlstons-coffee/behind-the-beans/our-story/history"
+              >
                 Our history
               </a>
             </li>
             <li className="kcgvpH">
-              <a className="link" href="/behind-the-beans/our-story/roastery">
+              <a
+                className="link"
+                href="/carlstons-coffee/behind-the-beans/our-story/roastery"
+              >
                 The Roastery
               </a>
             </li>
@@ -333,39 +360,18 @@ function Hero(props) {
 
       {/* CONTACT PAGE HERO */}
       {currentPage === "contact" && (
-        <div>
-          {/* <div className="hqRUBn">
-            <div className="hezRSH"></div>
-            <div className="hTVhZY"></div>
+        <div className="lbohIS">
+          <div className="hero__HeroImage bmCkeb">
+            <div
+              style={{ width: "100%", height: "100%" }}
+              alt="hero backgeound"
+            ></div>
           </div>
-          <div className="dYZPvR">
-            <h1>Let the free times roll</h1>
-            <p>
-              Use our app for the best carlstons Club experience.
-              <br />
-            </p>
-            <ul>
-              <li>
-                <span className="jkcThw linkCta">
-                  <a
-                    href="https://swf3j.app.goo.gl/QbMrq"
-          
-                
-                    className="link"
-                  >
-                    Join carlstons Club
-                  </a>
-                </span>
-              </li>
-              <li>
-                <span className=" kuucrm linkCta">
-                  <a href="/carlstons-club/login/" className="link">
-                    I'm already a member
-                  </a>
-                </span>
-              </li>
-            </ul>
-          </div> */}
+          <div className="iJhQuc">
+            <div className="QTmsr">
+              <h1 className="title">Contact us</h1>
+            </div>
+          </div>
         </div>
       )}
     </>

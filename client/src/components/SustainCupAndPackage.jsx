@@ -32,7 +32,10 @@ function SustainCupAndPackage() {
           <ul className="bohrSF">
             <li>
               <span className="jkcThw linkCta">
-                <a href="/carlstons-club" className="link btnDark">
+                <a
+                  href="/carlstons-coffee/carlstons-club"
+                  className="link btnDark"
+                >
                   Join Carlston's Club
                 </a>
               </span>
@@ -209,7 +212,7 @@ function SustainCupAndPackage() {
                 <span className="ipdQWq linkCta">
                   <a
                     className="link"
-                    href="/sustainability/cups-and-packaging/pods"
+                    href="/carlstons-coffee/sustainability/cups-and-packaging/pods"
                   >
                     Learn how you can recycle your pods
                   </a>
@@ -231,14 +234,20 @@ function SustainCupAndPackage() {
             <ul className="gsgHhh">
               <li>
                 <span className="jkcThw linkCta">
-                  <a className="link btnDark" href="/sustainability/climate">
+                  <a
+                    className="link btnDark"
+                    href="/carlstons-coffee/sustainability/climate"
+                  >
                     Read more
                   </a>
                 </span>
               </li>
               <li>
                 <span className="kuucrm linkCta">
-                  <a className="link btnDark" href="/sustainability">
+                  <a
+                    className="link btnDark"
+                    href="/carlstons-coffee/sustainability"
+                  >
                     Back to Sustainability
                   </a>
                 </span>

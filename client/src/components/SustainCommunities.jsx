@@ -110,7 +110,7 @@ function SustainCommunities() {
                 <span className="linkCta__StyledLinkCta-sc-1bq328k-0 jkcThw linkCta">
                   <a
                     className="link"
-                    href="/sustainability/communities/costa-foundation"
+                    href="/carlstons-coffee/sustainability/communities/costa-foundation"
                   >
                     Learn more
                   </a>
@@ -187,20 +187,9 @@ function SustainCommunities() {
               In 2014, we set up a nationwide Community Programme to enable our
               teams to support the communities we serve. Our nationwide
               activities focus on social themes that our customers tell us they
-              care about such as
-              <a href="#litter" target="_self" rel="noopener noreferrer">
-                litter
-              </a>
-              ,{" "}
-              <a href="#chatty-cafe" target="_self" rel="noopener noreferrer">
-                loneliness
-              </a>{" "}
-              and
-              <a
-                href="https://www.costa.co.uk/sustainability/resources#food-waste"
-                target="_self"
-                rel="noopener noreferrer"
-              >
+              care about such as <a href="#litter">litter</a>,{" "}
+              <a href="#chatty-cafe">loneliness</a> and{" "}
+              <a href="https://www.costa.co.uk/sustainability/resources#food-waste">
                 food waste
               </a>
               , and we also encourage our teams to plan their own activities to
@@ -229,7 +218,6 @@ function SustainCommunities() {
               Coffee Community Grant.&nbsp;
             </p>
             <p>
-              <span className="clear"></span>
               <img
                 alt="Barista holding a Costa Coffee cup"
                 src="//images.ctfassets.net/royi30b2qd26/AOQDoo7CAR00OR6Qtmdos/4703abbfc58ade896f53c6d9fa1d674c/barista-stories-cappuccino-heart-684x400.jpg"
@@ -249,11 +237,10 @@ function SustainCommunities() {
         <article className="richText__Container-sc-g2bix5-0 bsVIun">
           <div className="richText__Content-sc-g2bix5-1 ldNozT">
             <h2>
-              <a href="#" id="chatty-cafe" aria-label="chatty-cafe anchor"></a>
+              <a id="chatty-cafe" aria-label="chatty-cafe anchor"></a>
               Chatty Café
             </h2>
             <p>
-              <span className="clear"></span>
               <img
                 alt="Costa Coffee customer"
                 src="//images.ctfassets.net/royi30b2qd26/1bA9bRUSgwrmSnCVPk7ien/c967887850101fffa18c2fa0a68be544/btb-people-local-community-chatty-cafe-684x400.jpg"
@@ -282,11 +269,8 @@ function SustainCommunities() {
 
         <article className="richText__Container-sc-g2bix5-0 bsVIun">
           <div className="richText__Content-sc-g2bix5-1 ldNozT">
-            <h2>
-              <a href="#" id="litter" aria-label="litter anchor"></a>Litter
-            </h2>
+            <h2 id="litter">Litter</h2>
             <p>
-              <span className="clear"></span>
               <img
                 alt="A Costa Coffee employee collecting litter"
                 src="//images.ctfassets.net/royi30b2qd26/OlYaBnoNJ752oJ8b2nXYK/50df73ec6868cc2cc39332beb8722528/behind_the_beans-our_communities-community-litter_pick_primary_2019-684x400.jpg"
@@ -317,14 +301,17 @@ function SustainCommunities() {
             <ul className="standard__LinkCtaList-sc-mfnc1b-3 gsgHhh">
               <li>
                 <span className="linkCta__StyledLinkCta-sc-1bq328k-0 jkcThw linkCta">
-                  <a className="link" href="/sustainability/coffee">
+                  <a
+                    className="link"
+                    href="/carlstons-coffee/sustainability/coffee"
+                  >
                     Read more
                   </a>
                 </span>
               </li>
               <li>
                 <span className="linkCta__StyledLinkCta-sc-1bq328k-0 kuucrm linkCta">
-                  <a className="link" href="/sustainability">
+                  <a className="link" href="/carlstons-coffee/sustainability">
                     Back to Sustainability
                   </a>
                 </span>
@@ -399,11 +386,7 @@ function SustainCommunities() {
               **The open text question “What is your favourite branded coffee
               shop chain?” was asked to an independent panel of over 5,000 UK
               coffee shop consumers with 51.6% answering Costa Coffee.
-              <a
-                href="/terms-and-conditions#the-nations-favourite"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/carlstons-coffee/terms-and-conditions#the-nations-favourite">
                 See here
               </a>{" "}
               for full terms and conditions.

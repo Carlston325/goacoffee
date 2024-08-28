@@ -125,7 +125,7 @@ function SustainCoffee() {
                 <span className="jkcThw linkCta">
                   <a
                     className="link btnDark"
-                    href="/sustainability/cups-and-packaging"
+                    href="/carlstons-coffee/sustainability/cups-and-packaging"
                   >
                     Read more
                   </a>
@@ -133,7 +133,10 @@ function SustainCoffee() {
               </li>
               <li>
                 <span className="kuucrm linkCta">
-                  <a className="link btnDark" href="/sustainability">
+                  <a
+                    className="link btnDark"
+                    href="/carlstons-coffee/sustainability"
+                  >
                     Back to Sustainability
                   </a>
                 </span>

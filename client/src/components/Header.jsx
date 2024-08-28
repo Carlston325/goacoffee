@@ -22,8 +22,11 @@ function Header(props) {
   const pathParam = props.getParams;
   let gradientHeight;
 
+  console.log(endpoint, pathParam);
+
   switch (endpoint) {
     case "/":
+      gradientHeight = { height: "680px" };
       break;
     case "/menu":
       gradientHeight = { height: "450px" };
@@ -35,6 +38,12 @@ function Header(props) {
       gradientHeight = { height: "250px" };
       break;
     case "/sustainability":
+      gradientHeight = { height: "450px" };
+      break;
+    case "/about":
+      gradientHeight = { height: "450px" };
+      break;
+    case "/contact":
       gradientHeight = { height: "450px" };
       break;
     default:
@@ -63,7 +72,11 @@ function Header(props) {
       <div className="hero__Gradient" style={gradientHeight}></div>
       <div className="hero__Gradient second"></div>
       <div className="navbar">
-        <a aria-label="Carlstons Coffee logo" className="logo" href="/">
+        <a
+          aria-label="Carlstons Coffee logo"
+          className="logo"
+          href="/carlstons-coffee"
+        >
           <div>
             <div className="logo"> </div>
           </div>
@@ -71,16 +84,16 @@ function Header(props) {
         <nav className="mainNav">
           <ul>
             <li className="navA_link">
-              <a href="/menu">Menu</a>
+              <a href="/carlstons-coffee/menu">Menu</a>
             </li>
             <li className="navA_link">
-              <a href="/carlstons-club">Carlstons Club</a>
+              <a href="/carlstons-coffee/carlstons-club">Carlstons Club</a>
             </li>
             <li className="navA_link">
-              <a href="/order-online/delivery">Order online</a>
+              <a href="/carlstons-coffee/order-online/delivery">Order online</a>
             </li>
             <li className="navA_link">
-              <a href="/sustainability">Sustainability</a>
+              <a href="/carlstons-coffee/sustainability">Sustainability</a>
             </li>
             {/* <li className="navA_link">
               <a href="http://localhost:3001/">Gift Cards</a>
@@ -88,7 +101,7 @@ function Header(props) {
           </ul>
         </nav>
         <div className="iconsBar">
-          {/* <a href="/locations/store-locator/map">
+          {/* <a href="/carlstons-coffee/locations/store-locator/map">
             <LocationOnIcon className="iconsBar__StoreLocatorIcon kAvAWB" />
           </a> */}
           <div
@@ -103,17 +116,27 @@ function Header(props) {
               <>
                 {isLoggedIn ? (
                   <div className="iconsBar__DropdownContent on-login">
-                    <a href="/carlstons-club/account" className="btnDark">
+                    <a
+                      href="/carlstons-coffee/carlstons-club/account"
+                      className="btnDark"
+                    >
                       Account
                     </a>
 
-                    <a href="/" className="btnDark" onClick={handleLogout}>
+                    <a
+                      href="/carlstons-coffee"
+                      className="btnDark"
+                      onClick={handleLogout}
+                    >
                       Logout
                     </a>
                   </div>
                 ) : (
                   <div className="iconsBar__DropdownContent">
-                    <a href="/carlstons-club/login" className="btnDark">
+                    <a
+                      href="/carlstons-coffee/carlstons-club/login"
+                      className="btnDark"
+                    >
                       Log in
                     </a>
                   </div>

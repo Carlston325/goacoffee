@@ -35,7 +35,7 @@ function SustainMain() {
           <div className="iLfAmY">
             <div className="article_links--Links article_links--sustainability">
               <div className="card">
-                <a href="/sustainability/coffee">
+                <a href="/carlstons-coffee/sustainability/coffee">
                   <div alt=""></div>
                 </a>
                 <div>
@@ -47,12 +47,14 @@ function SustainMain() {
                     </p>
                   </div>
                   <div className="btnLight text-center">
-                    <a href="/sustainability/coffee">Learn more</a>
+                    <a href="/carlstons-coffee/sustainability/coffee">
+                      Learn more
+                    </a>
                   </div>
                 </div>
               </div>
               <div className="card">
-                <a href="/sustainability/cups-and-packaging">
+                <a href="/carlstons-coffee/sustainability/cups-and-packaging">
                   <div alt=""></div>
                 </a>
                 <div>
@@ -64,12 +66,14 @@ function SustainMain() {
                     </p>
                   </div>
                   <div className="btnLight text-center">
-                    <a href="/sustainability/cups-and-packaging">Learn more</a>
+                    <a href="/carlstons-coffee/sustainability/cups-and-packaging">
+                      Learn more
+                    </a>
                   </div>
                 </div>
               </div>
               <div className="card">
-                <a href="/sustainability/climate">
+                <a href="/carlstons-coffee/sustainability/climate">
                   <div alt=""></div>
                 </a>
                 <div>
@@ -81,12 +85,14 @@ function SustainMain() {
                     </p>
                   </div>
                   <div className="btnLight text-center">
-                    <a href="/sustainability/climate">Learn more</a>
+                    <a href="/carlstons-coffee/sustainability/climate">
+                      Learn more
+                    </a>
                   </div>
                 </div>
               </div>
               <div className="card">
-                <a href="/sustainability/communities">
+                <a href="/carlstons-coffee/sustainability/communities">
                   <div alt=""></div>
                 </a>
                 <div>
@@ -98,7 +104,9 @@ function SustainMain() {
                     </p>
                   </div>
                   <div className="btnLight text-center">
-                    <a href="/sustainability/communities">Learn more</a>
+                    <a href="/carlstons-coffee/sustainability/communities">
+                      Learn more
+                    </a>
                   </div>
                 </div>
               </div>
@@ -113,7 +121,7 @@ function SustainMain() {
           <div className="iLfAmY">
             <div className="article_links--Links article_links--other_areas">
               <div className="card">
-                <a href="/sustainability/people">
+                <a href="/carlstons-coffee/sustainability/people">
                   <div alt="" ></div>
                 </a>
                 <div >
@@ -125,12 +133,12 @@ function SustainMain() {
                     </p>
                   </div>
                   <div >
-                    <a href="/sustainability/people">Learn more</a>
+                    <a href="/carlstons-coffee/sustainability/people">Learn more</a>
                   </div>
                 </div>
               </div>
               <div className="card">
-                <a href="/sustainability/other-ingredients">
+                <a href="/carlstons-coffee/sustainability/other-ingredients">
                   <div alt="" ></div>
                 </a>
                 <div >
@@ -142,12 +150,12 @@ function SustainMain() {
                     </p>
                   </div>
                   <div >
-                    <a href="/sustainability/other-ingredients">Learn more</a>
+                    <a href="/carlstons-coffee/sustainability/other-ingredients">Learn more</a>
                   </div>
                 </div>
               </div>
               <div className="card">
-                <a href="/sustainability/nutrition">
+                <a href="/carlstons-coffee/sustainability/nutrition">
                   <div alt="" ></div>
                 </a>
                 <div >
@@ -159,12 +167,12 @@ function SustainMain() {
                     </p>
                   </div>
                   <div >
-                    <a href="/sustainability/nutrition">Learn more</a>
+                    <a href="/carlstons-coffee/sustainability/nutrition">Learn more</a>
                   </div>
                 </div>
               </div>
               <div className="card">
-                <a href="/sustainability/resources">
+                <a href="/carlstons-coffee/sustainability/resources">
                   <div alt="" ></div>
                 </a>
                 <div >
@@ -176,7 +184,7 @@ function SustainMain() {
                     </p>
                   </div>
                   <div >
-                    <a href="/sustainability/resources">Learn more</a>
+                    <a href="/carlstons-coffee/sustainability/resources">Learn more</a>
                   </div>
                 </div>
               </div>
@@ -199,7 +207,9 @@ function SustainMain() {
               </p>
             </div>
             <div className="link">
-              <a href="/policies-and-reports">Policies and reports</a>
+              <a href="/carlstons-coffee/policies-and-reports">
+                Policies and reports
+              </a>
             </div>
           </div>
         </article>

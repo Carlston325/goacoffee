@@ -9,7 +9,7 @@ function Home() {
           <div className="iLfAmY">
             <div className="promo__container">
               <div className="promo__card_first">
-                <a href="/menu/breakfast">
+                <a href="/carlstons-coffee/menu/breakfast">
                   <div className="ffKpmw"></div>
                 </a>
                 <div className="fUZYAO">
@@ -25,14 +25,17 @@ function Home() {
                     </p>
                   </div>
                   <div className="jIQMGF linkCta">
-                    <a href="/menu/breakfast" className="btnDark">
+                    <a
+                      href="/carlstons-coffee/menu/breakfast"
+                      className="btnDark"
+                    >
                       Our menu
                     </a>
                   </div>
                 </div>
               </div>
               <div className="promo__card_second">
-                <a href="/menu">
+                <a href="/carlstons-coffee/menu">
                   <div className="lhjGVk"></div>
                 </a>
                 <div className="fUZYAO">
@@ -49,14 +52,14 @@ function Home() {
                     </p>
                   </div>
                   <div className="jIQMGF linkCta">
-                    <a href="/menu/coffee-over-ice" className="btnDark">
+                    <a href="/carlstons-coffee/menu/coffee-over-ice" className="btnDark">
                       Our menu
                     </a>
                   </div>
                 </div>
               </div>
               <div className="promo__card_third">
-                <a id="dessert" href="/menu">
+                <a id="dessert" href="/carlstons-coffee/menu">
                   <div className="dniyWw"></div>
                 </a>
                 <div className="fUZYAO">
@@ -73,7 +76,7 @@ function Home() {
                     </p>
                   </div>
                   <div className="jIQMGF linkCta">
-                    <a href="/menu/dessert" className="btnDark">
+                    <a href="/carlstons-coffee/menu/dessert" className="btnDark">
                       Our menu
                     </a>
                   </div>
