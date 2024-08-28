@@ -5,10 +5,9 @@ import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Router>
+  <Router basename="/carlstons-coffee">
     <React.StrictMode>
       <App />
     </React.StrictMode>
   </Router>
 );
- 
