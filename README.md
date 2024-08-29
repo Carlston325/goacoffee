@@ -25,10 +25,11 @@ You can check out the live version of the website here: [Your Website URL](#)
 - [Introduction](#introduction)
 - [Pages Overview](#pages-overview)
   - [Home Page](#home-page)
-  - [About Page](#about-page)
-  - [Services Page](#services-page)
-  - [Contact Page](#contact-page)
-  - [Additional Pages](#additional-pages)
+  - [Header & Footer](#header--footer)
+  - [Club Page](#club-page)
+  - [Order Online Page](#order-online)
+  - [Sustainability Page](#sustainability)
+  - [Account Page](#account)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -47,9 +48,33 @@ You can check out the live version of the website here: [Your Website URL](#)
 ![Home Page Screenshot](./images/Homepage.jpg)
 ![Home Page Screenshot 2](./images/Homepage_2.png)
 
-### Footer
+### Header & Footer
 
+![Header Screenshot](./images/Header.png)
 ![Footer Screenshot](./images/Footer.png)
+
+### Club Page
+
+![Carlstons Club Screenshot](./images/Carlstons%20Club.png)
+
+### Order Online
+
+![Order Online Screenshot](./images/Delivery.png)
+![Order Online Screenshot](./images/Click_n_Collect.png)
+
+### Sustainability
+
+![Sustainability Main Screenshot](./images/Sustainability.png)
+![Coffee Screenshot](./images/Coffee.png)
+![Cups & Packaging Screenshot](./images/Cups_n_Packaging.png)
+![Climate Screenshot](./images/Climate.png)
+![Communities Screenshot](./images/Communities.png)
+
+### Account
+
+![Account Screenshot](./images/Account.png)
+![Login Screenshot](./images/Login.png)
+![Register Screenshot](./images/Register.png)
 
 ## Technologies Used
 
@@ -66,12 +91,8 @@ To run this website locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/Carlston325/carlstons-coffee.git`
 2. Navigate to the project directory: `cd carlstons-coffee`
 3. Install dependencies: `npm install` (or the equivalent for your setup)
-4. Start the development server: `npm start` (concurrently is installed)
+4. Start the development server: `npm start` (concurrently is installed so both react and server is launched)
 5. Open your browser and go to `http://localhost:3000`
-
-## Usage
-
-[Provide any instructions or examples of how to use the site. This might include how to navigate, how to interact with features, or any specific details users should know.]
 
 ## Contributing
 
@@ -84,14 +105,8 @@ Contributions are welcome! Please follow these steps to contribute:
 5. Push to the branch (`git push origin feature-branch`)
 6. Open a pull request
 
-## License
-
-This project is licensed under the [Your License Name] License - see the [LICENSE](./LICENSE) file for details.
-
 ## Contact
 
-For any inquiries or feedback, please contact us at [Your Email Address](mailto:youremail@example.com).
+For any inquiries or feedback, please contact us at [Your Email Address](mailto:crebel325@gmail.com).
 
 ---
-
-This template provides a clear, organized structure to showcase your website pages effectively, with the flexibility to adapt to your specific project.
