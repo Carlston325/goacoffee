@@ -1,28 +1,14 @@
-### `npm start`
+--
 
-Runs the app in the development mode. (runs client and server through concurrently)
+# [Carlstons Coffee] - Website Overview
 
-### https://github.com/Carlston325/carlstons-coffee/archive/refs/heads/main.zip
-
-Download the ZIP
-
-Carlstons Coffee
-
-Creating a well-structured README to showcase your website pages, complete with images, is a great way to present your work. Here's a template you can use:
-
----
-
-# [Your Website Name] - Website Overview
-
-Welcome to the README for **[Your Website Name]**. This document provides an overview of the website's key pages, with images and descriptions to guide you through the features and design.
-
-## Live Demo
-
-You can check out the live version of the website here: [Your Website URL](#)
+Welcome to the README for **[Carlstons Coffee]**. This document provides an overview of the website's key pages, with images.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
 - [Pages Overview](#pages-overview)
   - [Home Page](#home-page)
   - [Header & Footer](#header--footer)
@@ -30,16 +16,32 @@ You can check out the live version of the website here: [Your Website URL](#)
   - [Order Online Page](#order-online)
   - [Sustainability Page](#sustainability)
   - [Account Page](#account)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
 
-**[Your Website Name]** is a [brief description of your website]. The site is designed to [purpose of the site] and provides [mention any key features, unique aspects].
+**[Carlstons Coffee]** is a website for a coffee shop. The site is designed to showcase the products and services offered by the shop and if a shop wants to do a loyalty system for it's customers then that is also provided through a membership that the customers can register for.
+
+## Technologies Used
+
+- **Frontend:** HTML, CSS, JavaScript, React
+- **Backend:** Node.js, Express
+- **Database:** PostgreSQL
+- **Hosting:** GitHub Pages
+- **Other Tools:** Bootstrap
+
+## Installation
+
+[Download the ZIP](https://github.com/Carlston325/carlstons-coffee/archive/refs/heads/main.zip)
+
+To run this website locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/Carlston325/carlstons-coffee.git`
+2. Navigate to the project directory: `cd carlstons-coffee`
+3. Install dependencies: `npm install` (or the equivalent for your setup)
+4. Start the development server: `npm start` (concurrently is installed so both react and server is launched)
+5. Open your browser and go to `http://localhost:3000`
 
 ## Pages Overview
 
@@ -76,24 +78,6 @@ You can check out the live version of the website here: [Your Website URL](#)
 ![Login Screenshot](./images/Login.png)
 ![Register Screenshot](./images/Register.png)
 
-## Technologies Used
-
-- **Frontend:** HTML, CSS, JavaScript, React
-- **Backend:** Node.js, Express
-- **Database:** PostgreSQL
-- **Hosting:** GitHub Pages
-- **Other Tools:** Bootstrap
-
-## Installation
-
-To run this website locally, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/Carlston325/carlstons-coffee.git`
-2. Navigate to the project directory: `cd carlstons-coffee`
-3. Install dependencies: `npm install` (or the equivalent for your setup)
-4. Start the development server: `npm start` (concurrently is installed so both react and server is launched)
-5. Open your browser and go to `http://localhost:3000`
-
 ## Contributing
 
 Contributions are welcome! Please follow these steps to contribute:
@@ -107,6 +91,6 @@ Contributions are welcome! Please follow these steps to contribute:
 
 ## Contact
 
-For any inquiries or feedback, please contact us at [Your Email Address](mailto:crebel325@gmail.com).
+For any inquiries or feedback, please contact us [here](mailto:crebel325@gmail.com).
 
 ---
