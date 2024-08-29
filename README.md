@@ -1,3 +1,5 @@
+![Title Image](./images/README_Title.png)
+
 # Carlstons Coffee - Website Overview
 
 Welcome to the README for **[Carlstons Coffee]**. This document provides an overview of the website's key pages, with images.
@@ -19,7 +21,7 @@ Welcome to the README for **[Carlstons Coffee]**. This document provides an over
 
 ## Introduction
 
-**[Carlstons Coffee]** is a website for a coffee shop. The site is designed to showcase the products and services offered by the shop and if a shop wants to do a loyalty system for it's customers then that is also provided through a membership that the customers can register for.
+**Carlstons Coffee** is a website for a coffee shop. The site is designed to showcase the products and services offered by the shop and if a shop wants to do a loyalty system for it's customers then that is also provided through a membership that the customers can register for.
 
 ## Technologies Used
 
