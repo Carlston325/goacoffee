@@ -65,7 +65,7 @@ function Header(props) {
     if (lastLogin && new Date().getTime() - lastLogin > 6 * 60 * 60 * 1000) {
       handleLogout();
     }
-  }, []);
+  }, [handleLogout]);
 
   return (
     <div className="header">

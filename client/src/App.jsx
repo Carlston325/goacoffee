@@ -7,7 +7,7 @@ import "./assets/styles/orderOnline.css";
 import "./assets/styles/club.css";
 import "./assets/styles/sustainability.css";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -20,6 +20,7 @@ import Club from "./pages/Club";
 import Sustainability from "./pages/Sustainability";
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
     return localStorage.getItem("isLoggedIn") || false;
   });
