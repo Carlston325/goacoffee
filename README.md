@@ -1,4 +1,4 @@
-# [Carlstons Coffee] - Website Overview
+# Carlstons Coffee - Website Overview
 
 Welcome to the README for **[Carlstons Coffee]**. This document provides an overview of the website's key pages, with images.
 
