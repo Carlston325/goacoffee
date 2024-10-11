@@ -7,10 +7,11 @@ import { useLocation } from "react-router-dom";
 
 function Header(props) {
   const navigate = useNavigate();
-  const handleLogout = () => {
+  // eslint-disable-next-line
+  function handleLogout() {
     localStorage.clear();
     navigate("/");
-  };
+  }
 
   const [isDroppedDown, setIsDroppedDown] = useState(false);
   function toggleDropDown() {

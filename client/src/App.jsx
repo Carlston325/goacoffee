@@ -8,7 +8,7 @@ import "./assets/styles/club.css";
 import "./assets/styles/sustainability.css";
 
 import React, { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -20,10 +20,11 @@ import Club from "./pages/Club";
 import Sustainability from "./pages/Sustainability";
 
 function App() {
-  // eslint-disable-next-line no-unused-vars
+  // eslint-disable-next-line
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
     return localStorage.getItem("isLoggedIn") || false;
   });
+
   function getIsLoggedIn(x) {
     localStorage.setItem("isLoggedIn", x);
   }
@@ -35,41 +36,46 @@ function App() {
 
   return (
     <>
-      <Header getParams={pathParams} isLoggedIn={isLoggedIn} />
-      <Routes>
-        <Route exact path="/" element={<Home passParams={handlePaths} />} />
-        <Route path="/about" element={<About passParams={handlePaths} />} />
-        <Route path="/contact" element={<Contact passParams={handlePaths} />} />
-        <Route path="/menu" element={<Menu passParams={handlePaths} />} />
-        <Route
-          path="/carlstons-club"
-          element={<Club passParams={handlePaths} />}
-        />
-        <Route
-          path="/order-online"
-          element={<OrderOnline passParams={handlePaths} />}
-        />
-        <Route
-          path="/sustainability"
-          element={<Sustainability passParams={handlePaths} />}
-        />
-        <Route path="/menu/:id" element={<Menu />} />
-        <Route
-          path="/order-online/:id"
-          element={<OrderOnline passParams={handlePaths} />}
-        />
-        <Route
-          path="/sustainability/:id"
-          element={<Sustainability passParams={handlePaths} />}
-        />{" "}
-        <Route
-          path="/carlstons-club/:id"
-          element={
-            <Club passParams={handlePaths} getIsLoggedIn={getIsLoggedIn} />
-          }
-        />
-      </Routes>
-      <Footer />
+      <Router>
+        <Header getParams={pathParams} isLoggedIn={isLoggedIn} />
+        <Routes>
+          <Route exact path="/" element={<Home passParams={handlePaths} />} />
+          <Route path="/about" element={<About passParams={handlePaths} />} />
+          <Route
+            path="/contact"
+            element={<Contact passParams={handlePaths} />}
+          />
+          <Route path="/menu" element={<Menu passParams={handlePaths} />} />
+          <Route
+            path="/carlstons-club"
+            element={<Club passParams={handlePaths} />}
+          />
+          <Route
+            path="/order-online"
+            element={<OrderOnline passParams={handlePaths} />}
+          />
+          <Route
+            path="/sustainability"
+            element={<Sustainability passParams={handlePaths} />}
+          />
+          <Route path="/menu/:id" element={<Menu />} />
+          <Route
+            path="/order-online/:id"
+            element={<OrderOnline passParams={handlePaths} />}
+          />
+          <Route
+            path="/sustainability/:id"
+            element={<Sustainability passParams={handlePaths} />}
+          />{" "}
+          <Route
+            path="/carlstons-club/:id"
+            element={
+              <Club passParams={handlePaths} getIsLoggedIn={getIsLoggedIn} />
+            }
+          />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }

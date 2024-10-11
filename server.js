@@ -1,7 +1,6 @@
 import express from "express";
 import bcrypt from "bcrypt";
 import cors from "cors";
-import axios from "axios";
 import pg from "pg";
 import dotenv from "dotenv";
 const app = express();

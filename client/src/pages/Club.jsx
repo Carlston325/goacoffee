@@ -460,7 +460,9 @@ function Club(props) {
                 <ul className="dNSNqv">
                   <li>
                     <div className="jwGbBy linkCta">
-                      <a href="/carlstons-coffee/carlstons-club/how-to-guides">Learn how</a>
+                      <a href="/carlstons-coffee/carlstons-club/how-to-guides">
+                        Learn how
+                      </a>
                     </div>
                   </li>
                 </ul>
